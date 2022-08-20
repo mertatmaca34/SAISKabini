@@ -17,7 +17,11 @@ namespace SAISKabini
 
         private byte[] db1Buffer = new byte[30];
 
+<<<<<<< HEAD
+        private byte[] mb1Buffer = new byte[300];
+=======
         private byte[] MBBuffer = new byte[2000];
+>>>>>>> son güncellemeProje dosyası ekle.
 
 
         public int PlcResult { get; set; }
@@ -51,11 +55,14 @@ namespace SAISKabini
         public bool Pompa2Value { get; set; }
 
 
+<<<<<<< HEAD
+=======
         //MB36 DENEME
         public bool[] MB36 = new bool[8];
         public bool[] MB19 = new bool[8];
         public bool[] MB1600 = new bool[8];
 
+>>>>>>> son güncellemeProje dosyası ekle.
 
         public DateTime GetPlcTime() //Anlık PLC Saati Çekme
         {
@@ -69,11 +76,31 @@ namespace SAISKabini
 
         public int GetStatus() //Anlık Kabin Çalışma Durumu (Oto mod, Yıkama vb)
         {
+<<<<<<< HEAD
+            PlcResult = client.MBRead(0, mb1Buffer.Length, mb1Buffer);
 
+            bool yikama = S7.GetBitAt(mb1Buffer, 24, 1);
 
+            bool haftalikYikama = S7.GetBitAt(mb1Buffer, 24, 2);
 
+            bool auto = S7.GetBitAt(mb1Buffer, 10, 6);
 
+            bool bakim = S7.GetBitAt(mb1Buffer, 10, 4);
 
+            bool kalibrasyon = S7.GetBitAt(mb1Buffer, 10, 5);
+=======
+            PlcResult = client.MBRead(0, MBBuffer.Length, MBBuffer);
+
+            bool yikama = S7.GetBitAt(MBBuffer, 24, 1);
+
+            bool haftalikYikama = S7.GetBitAt(MBBuffer, 24, 2);
+
+            bool auto = S7.GetBitAt(MBBuffer, 10, 6);
+
+            bool bakim = S7.GetBitAt(MBBuffer, 10, 4);
+
+            bool kalibrasyon = S7.GetBitAt(MBBuffer, 10, 5);
+>>>>>>> son güncellemeProje dosyası ekle.
 
 
             int status = yikama == true ? 23
@@ -82,17 +109,23 @@ namespace SAISKabini
             : bakim == true ? 25
             : kalibrasyon == true ? 9
             : 0;
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> son güncellemeProje dosyası ekle.
             return status;
         }
 
 
         public void SetRealValues()
         {
+<<<<<<< HEAD
+=======
             PlcResult = client.DBRead(41, 0, db41Buffer.Length, db41Buffer);
 
 
+>>>>>>> son güncellemeProje dosyası ekle.
             AkmValue = Math.Round(S7.GetRealAt(db41Buffer, 36), 2);
 
             OksijenValue = Math.Round(S7.GetRealAt(db41Buffer, 24), 2);
@@ -144,6 +177,8 @@ namespace SAISKabini
             Pompa2Value = S7.GetBitAt(db1Buffer, 27, 7);
         }
 
+<<<<<<< HEAD
+=======
         public void SetGunlukYikama()
         {
             PlcResult = client.MBRead(0, MBBuffer.Length, MBBuffer);
@@ -180,13 +215,17 @@ namespace SAISKabini
             PlcResult = client.MBWrite(0, MBBuffer.Length, MBBuffer);
         }
 
+>>>>>>> son güncellemeProje dosyası ekle.
 
         public bool Connected()
         {
             return client.Connected;
         }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> son güncellemeProje dosyası ekle.
         public void Reconnect()
         {
             PlcResult = client.ConnectTo("10.33.3.253", 0, 1);

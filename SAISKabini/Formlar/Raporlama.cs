@@ -19,8 +19,14 @@ namespace SAISKabini
 
         private void Raporlama_Load(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'sAISKabiniDataSet.Veriler' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.verilerTableAdapter.Fill(this.sAISKabiniDataSet.Veriler);
 
             this.reportViewer2.RefreshReport();
+        }
+
+        private void btn_Olustur_Click(object sender, EventArgs e)
+        {
         }
     }
 }

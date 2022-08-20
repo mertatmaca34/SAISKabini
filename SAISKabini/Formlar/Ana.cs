@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -7,7 +8,7 @@ namespace SAISKabini
 {
     public partial class Ana : Form
     {
-        #region Yuvarlak Köşe DLL eklentisi
+        //#region Yuvarlak Köşe DLL eklentisi
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -18,13 +19,12 @@ namespace SAISKabini
             int nWidthEllipse, // width of ellipse
             int nHeightEllipse // height of ellipse
         );
-        #endregion
 
         #region Yan Formların Çağırılması
-        
+
         readonly Anasayfa anasayfa = new Anasayfa();
-        readonly VeriOranlari veriOranlari = new VeriOranlari();
         readonly Simulasyon simulasyon = new Simulasyon();
+        readonly VeriOranlari veriOranlari = new VeriOranlari();
         readonly Kalibrasyon kalibrasyon = new Kalibrasyon();
         readonly MailAyarlari mailAyarlari = new MailAyarlari();
         readonly Raporlama raporlama = new Raporlama();
@@ -32,10 +32,10 @@ namespace SAISKabini
 
         #endregion
 
-        public Ana()
-        {
-            InitializeComponent();
+        public DeserializeResult deserializeResult = new DeserializeResult();
 
+        private void Ana_Load(object sender, EventArgs e)
+        {
             #region Default Form Stilleri
 
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
@@ -47,6 +47,11 @@ namespace SAISKabini
 
 
             #endregion
+        }
+
+        public Ana()
+        {
+            InitializeComponent();
 
             #region Butonları Gri Yapma
             foreach (Control item in leftPanel.Controls)
@@ -229,7 +234,7 @@ namespace SAISKabini
             SetDefaultButtonValues(btn_kayitlar, null);
         }
         #endregion
-
+        
         private void SetDefaultButtonValues(object sender, EventArgs e)
         {
             #region Butonları Beyaz Yapma
@@ -302,33 +307,6 @@ namespace SAISKabini
         {
             ColorScheme scheme = new ColorScheme();
 
-            /*
-            foreach (Control component in container)
-            {
-                if (component is Panel)
-                {
-                    ChangeTheme(component.Controls);
-                    component.BackColor = scheme.light_PanelColor;
-                    component.ForeColor = scheme.light_ForeColor;
-                }
-                else if (component is Button)
-                {
-                    component.BackColor = scheme.light_PanelColor;
-                    component.ForeColor = scheme.light_ForeColor;
-                }
-                else if (component is TextBox)
-                {
-                    component.BackColor = scheme.light_PanelColor;
-                    component.ForeColor = scheme.light_ForeColor;
-                }
-                else if (component is TableLayoutPanel)
-                {
-                    component.BackColor = scheme.light_BackColor;
-                    component.ForeColor = scheme.light_ForeColor;
-                }
-            }
-            */
-
             foreach (Control component in container)
             {
                 if (component is Panel)
@@ -359,5 +337,6 @@ namespace SAISKabini
                 }
             }
         }
+
     }
 }

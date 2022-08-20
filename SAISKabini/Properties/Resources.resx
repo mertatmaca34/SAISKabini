@@ -139,8 +139,8 @@
   <data name="panel_bakanlikkabini_bos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_bakanlikkabini_bos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pump2_idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pump2_idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Xbox Series X_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xbox Series X_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pump1_idle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pump1_idle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +148,8 @@
   <data name="monitoring2_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monitoring2_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mail_with_wings_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mail_with_wings_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pump1_idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pump1_idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ful_screen_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ful_screen_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +165,12 @@
   </data>
   <data name="imac_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imac_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iski-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Iski-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_bakanlikkabini_dolu_yikama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_bakanlikkabini_dolu_yikama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="signature_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\signature_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +193,11 @@
   <data name="calib_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calib_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="panel_bakanlikkabini_dolu_yikama" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panel_bakanlikkabini_dolu_yikama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iski_logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iski_logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_bakanlikkabini_doluyikama_kapiacik" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_bakanlikkabini_doluyikama_kapiacik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reporting_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reporting_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,20 +211,14 @@
   <data name="1326023" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1326023.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="multiline_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\multiline_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="monitoring2_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monitoring2_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tank_bos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tank_bos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="log_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pump1_anim" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pump1_anim.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +232,8 @@
   <data name="reporting_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reporting_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="multiline_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\multiline_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="multiline_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multiline_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="notifications_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notifications_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,8 +244,8 @@
   <data name="settings_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mail_with_wings_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mail_with_wings_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="panel_bakanlikkabini_dolu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_bakanlikkabini_dolu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,8 +253,8 @@
   <data name="monitoring_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monitoring_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lo2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="monitoring2_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monitoring2_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="settings_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,8 +265,8 @@
   <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pump1_idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pump1_idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pump2_idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pump2_idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="panel_bakanlikkabini_kapikapali" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_bakanlikkabini_kapikapali.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,25 +274,31 @@
   <data name="edit_image_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_image_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="notifications_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notifications_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="panel_bakanlikkabini_bos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_bakanlikkabini_bos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Iski-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Iski-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="log_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="panel_bakanlikkabini_doluyikama_kapiacik" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panel_bakanlikkabini_doluyikama_kapiacik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="multiline_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multiline_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="notifications_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notifications_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lo2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iski_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iski_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="numune_bos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\numune_bos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Xbox Series X_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Xbox Series X_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rest API_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rest API_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

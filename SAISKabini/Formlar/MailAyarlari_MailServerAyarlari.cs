@@ -26,6 +26,8 @@ namespace SAISKabini
         );
         #endregion
 
+        readonly FormStyles formStyles = new FormStyles();
+
         public MailAyarlari_MailServerAyarlari()
         {
             InitializeComponent();

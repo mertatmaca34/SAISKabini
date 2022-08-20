@@ -34,6 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.8.9\lib\net40\BouncyCastle.Crypto.dll</HintPath>
@@ -56,12 +57,6 @@
     <Reference Include="DotNetBrowser.WinForms, Version=2.16.0.2839, Culture=neutral, PublicKeyToken=b0b5aaca9c95c84e, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetBrowser.WinForms.2.16.0\lib\net45\DotNetBrowser.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=1.3.3.11, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpZipLib.1.3.3\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -79,6 +74,9 @@
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Nest, Version=7.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
+      <HintPath>..\packages\NEST.7.17.4\lib\net461\Nest.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -115,6 +113,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
@@ -153,8 +154,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CellPaint.cs" />
-    <Compile Include="DeserializeResult.cs" />
     <Compile Include="Formlar\Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,7 +183,6 @@
     <Compile Include="Entities\API_DiagnosticType.cs" />
     <Compile Include="Entities\API_StationInformation.cs" />
     <Compile Include="Entities\AToken.cs" />
-    <Compile Include="Entities\GetLastData.cs" />
     <Compile Include="Entities\Login.cs" />
     <Compile Include="Entities\LoginResult.cs" />
     <Compile Include="Entities\ResultStatus.cs" />
@@ -234,11 +232,11 @@
     <Compile Include="Formlar\MailAyarlari_MailServerAyarlari.Designer.cs">
       <DependentUpon>MailAyarlari_MailServerAyarlari.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormOperations.cs" />
-    <Compile Include="FormStyles.cs" />
     <Compile Include="MathematicalOps.cs" />
     <Compile Include="Models\ServicesModel.cs" />
-    <Compile Include="PlcOps.cs" />
+    <Compile Include="Entities\PlcOps.cs" />
+    <Compile Include="Entities\PlcOpsAna.cs" />
+    <Compile Include="Entities\PlcOpsCalibration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Formlar\Raporlama.cs">
@@ -259,9 +257,7 @@
     <Compile Include="Formlar\Simulasyon.Designer.cs">
       <DependentUpon>Simulasyon.cs</DependentUpon>
     </Compile>
-    <Compile Include="SampleInfo.cs" />
     <Compile Include="SqlSave.cs" />
-    <Compile Include="sqlSave\IstasyonBilgileri.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Formlar\VeriOranlari.cs">
       <SubType>Form</SubType>
@@ -269,9 +265,6 @@
     <Compile Include="Formlar\VeriOranlari.Designer.cs">
       <DependentUpon>VeriOranlari.cs</DependentUpon>
     </Compile>
-    <Compile Include="StationInfo.cs" />
-    <Compile Include="UserInfo.cs" />
-    <Compile Include="Yikama.cs" />
     <EmbeddedResource Include="Formlar\Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,10 +316,25 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Simulasyon.resx">
       <DependentUpon>Simulasyon.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\VeriOranlari.resx">
       <DependentUpon>VeriOranlari.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Entities\packages.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -337,9 +345,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SAISKabiniDataSet.xsc">
+      <DependentUpon>SAISKabiniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SAISKabiniDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAISKabiniDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAISKabiniDataSet.xss">
+      <DependentUpon>SAISKabiniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SAISKabiniDataSet1.xsc">
+      <DependentUpon>SAISKabiniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SAISKabiniDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAISKabiniDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAISKabiniDataSet1.xss">
+      <DependentUpon>SAISKabiniDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Entities\App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home.png" />
@@ -513,6 +543,9 @@
   <ItemGroup>
     <None Include="Resources\Xbox Series X_100px.png" />
     <None Include="Resources\settings_96px.png" />
+    <None Include="Resources\iski_logo.png" />
+    <None Include="Resources\iski_logo1.png" />
+    <None Include="Resources\Rest API_100px.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
