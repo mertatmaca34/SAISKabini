@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using NPOI.SS.Formula.Functions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -137,7 +138,7 @@ namespace SAISKabini
         {
 
             var res = PostData<object>(this.stationType.ToString() + "/SendHostChanged", JsonConvert.SerializeObject(data));
-
+            
             return res;
 
         }
@@ -146,7 +147,7 @@ namespace SAISKabini
         {
 
             var res = PostData<List<API_DiagnosticType>>(this.stationType.ToString() + "/GetDiagnosticTypes", "");
-
+            
             return res;
 
         }
@@ -155,10 +156,11 @@ namespace SAISKabini
         {
 
             var res = PostData<object>(this.stationType.ToString() + "/SendDiagnostic", JsonConvert.SerializeObject(data));
-
+            
             return res;
 
         }
+
         public ResultStatus<object> sendData(SendData data)
         {
 
@@ -167,6 +169,7 @@ namespace SAISKabini
             return res;
 
         }
+
         public ResultStatus<object> sendCalibration(SendCalibration data)
         {
 

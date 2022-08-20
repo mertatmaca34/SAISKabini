@@ -17,7 +17,7 @@ namespace SAISKabini
 
         private byte[] db1Buffer = new byte[30];
 
-        private byte[] mb1Buffer = new byte[300];
+        private byte[] MBBuffer = new byte[2000];
 
 
         public int PlcResult { get; set; }
@@ -51,6 +51,11 @@ namespace SAISKabini
         public bool Pompa2Value { get; set; }
 
 
+        //MB36 DENEME
+        public bool[] MB36 = new bool[8];
+        public bool[] MB19 = new bool[8];
+        public bool[] MB1600 = new bool[8];
+
 
         public DateTime GetPlcTime() //Anlık PLC Saati Çekme
         {
@@ -64,17 +69,11 @@ namespace SAISKabini
 
         public int GetStatus() //Anlık Kabin Çalışma Durumu (Oto mod, Yıkama vb)
         {
-            PlcResult = client.MBRead(0, mb1Buffer.Length, mb1Buffer);
 
-            bool yikama = S7.GetBitAt(mb1Buffer, 24, 1);
 
-            bool haftalikYikama = S7.GetBitAt(mb1Buffer, 24, 2);
 
-            bool auto = S7.GetBitAt(mb1Buffer, 10, 6);
 
-            bool bakim = S7.GetBitAt(mb1Buffer, 10, 4);
 
-            bool kalibrasyon = S7.GetBitAt(mb1Buffer, 10, 5);
 
 
             int status = yikama == true ? 23
@@ -83,12 +82,17 @@ namespace SAISKabini
             : bakim == true ? 25
             : kalibrasyon == true ? 9
             : 0;
+
+
             return status;
         }
 
 
         public void SetRealValues()
         {
+            PlcResult = client.DBRead(41, 0, db41Buffer.Length, db41Buffer);
+
+
             AkmValue = Math.Round(S7.GetRealAt(db41Buffer, 36), 2);
 
             OksijenValue = Math.Round(S7.GetRealAt(db41Buffer, 24), 2);
@@ -138,6 +142,42 @@ namespace SAISKabini
             Pompa1Value = S7.GetBitAt(db1Buffer, 27, 4);
 
             Pompa2Value = S7.GetBitAt(db1Buffer, 27, 7);
+        }
+
+        public void SetGunlukYikama()
+        {
+            PlcResult = client.MBRead(0, MBBuffer.Length, MBBuffer);
+
+            for (int i = 0; i < 8; i++)
+            {
+                if (i != 5)
+                {
+                    MB19[i] = S7.GetBitAt(MBBuffer, 19, i);
+                    S7.SetBitAt(MBBuffer, 19, i, MB19[i]);
+                }
+            }
+
+            S7.SetBitAt(MBBuffer, 19, 5, true);
+
+            PlcResult = client.MBWrite(0, MBBuffer.Length, MBBuffer);
+        }
+
+        public void SetHaftalikYikama()
+        {
+            PlcResult = client.MBRead(0, MBBuffer.Length, MBBuffer);
+
+            for (int i = 0; i < 8; i++)
+            {
+                if (i != 0)
+                {
+                    MB1600[i] = S7.GetBitAt(MBBuffer, 1600, i);
+                    S7.SetBitAt(MBBuffer, 1600, i, MB19[i]);
+                }
+            }
+
+            S7.SetBitAt(MBBuffer, 1600, 0, true);
+
+            PlcResult = client.MBWrite(0, MBBuffer.Length, MBBuffer);
         }
 
 

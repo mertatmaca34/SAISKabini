@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using Sharp7;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -13,7 +15,14 @@ namespace SAISKabini
     {
         private protected ServicesModel Services { get; set; }
 
+        readonly UserInfo userInfo = new UserInfo();
+
+        readonly FormStyles formStyles = new FormStyles();
+
+        readonly SqlSave sqlSave = new SqlSave();
+
         readonly static string pcName = Environment.MachineName;
+
         readonly SqlConnection sqlConnection = new SqlConnection("Data Source=" + pcName + "\\SQLEXPRESS;Initial Catalog=SAISKabini;Integrated Security=True");
 
         #region Yuvarlak Köşe DLL eklentisi
@@ -43,91 +52,49 @@ namespace SAISKabini
 
         private void Anasayfa_Load(object sender, EventArgs e)
         {
-            #region Bilgilerin Veritabanından Getirilmesi
-
-            var bgw_formYukle = new BackgroundWorker();
-
-            bgw_formYukle.DoWork += delegate
+            foreach (Control item in Right_TLP.Controls)
             {
-                sqlConnection.Open();
-
-                SqlCommand sqlCommand = new SqlCommand("spIstasyonBilgiGetir", sqlConnection) //İstasyon bilgilerinin yüklenmesi
                 {
-                    CommandType = CommandType.StoredProcedure
-                };
-
-                SqlDataReader reader = sqlCommand.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    lbl_istasyonAdi.Text = reader["istasyonAdi"].ToString();
-                    lbl_istasyonIp.Text = reader["istasyonIp"].ToString();
-                    lbl_simId.Text = reader["istasyonSimId"].ToString();
                 }
+            }
 
-
-                sqlCommand = new SqlCommand("spGunlukYikamaGetir") //Günlük yikama bilgilerinin yüklenmesi
+            {
                 {
+
+
+
+            {
                     CommandType = CommandType.StoredProcedure
                 };
 
-                while (reader.Read())
-                {
-                    lbl_sonGunlukYikama.Text = reader["Tarih"].ToString();
 
-                    DateTime sonYikama = (DateTime)reader["Tarih"];
-                    TimeSpan yikamaSuresi = new TimeSpan(6, 0, 0);
 
-                    TimeSpan kalanSure = yikamaSuresi - (DateTime.Now - sonYikama);
-
-                    lbl_birSonrakiGunlukYikama.Text = kalanSure.ToString("c");
-                }
-
-                sqlCommand = new SqlCommand("spHaftalikYikamaGetir") //Haftalik yikama bilgilerinin yüklenmesi
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-
-                while (reader.Read())
-                {
-                    lbl_sonHaftalikYikama.Text = reader["Tarih"].ToString();
-
-                    DateTime sonYikama = (DateTime)reader["Tarih"];
-                    TimeSpan yikamaSuresi = new TimeSpan(7, 0, 0, 0);
-
-                    TimeSpan kalanSure = yikamaSuresi - (DateTime.Now - sonYikama);
 
                     lbl_birSonrakiHaftalikYikama.Text = kalanSure.ToString("c");
                 }
 
-                sqlCommand = new SqlCommand("spNumuneBilgiGetir") //Numune bilgilerinin yüklenmesi
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
 
                 while (reader.Read())
                 {
                     DateTime tetikTarih = (DateTime)reader["BaslamaTarihi"];
                     lbl_numuneTetikveTarih.Text = reader["Tetik"] + ": " + reader["Değer"] + " - " + tetikTarih.ToString("hh:mm:ss");
 
+                //Numune Bilgileri
+                SampleInfo sampleInfo = new SampleInfo();
 
-                    DateTime numuneAlmaBitisTarihi = (DateTime)reader["BitisTarihi"];
 
+                DateTime tetikTarih = sampleInfo.baslamaTarihi;
+                lbl_numuneTetikveTarih.Text = sampleInfo.tetik + ": " + sampleInfo.deger + " - " + tetikTarih.ToString("hh:mm:ss");
 
-                    lbl_numuneAlmaBitis.Text = numuneAlmaBitisTarihi.ToString("hh:mm:ss");
-
-                    lbl_dolapSicakligi.Text = reader["DolapSicakligi"] + "°C";
-                }
-                sqlConnection.Close();
+                DateTime numuneAlmaBitisTarihi = sampleInfo.bitisTarihi;
+                lbl_numuneAlmaBitis.Text = numuneAlmaBitisTarihi.ToString("hh:mm:ss");
             };
 
             bgw_formYukle.RunWorkerAsync();
-
         }
 
         public string softwareVersion = "1.0.0";
 
-        PlcOps plc = new PlcOps();
 
         #endregion
 
@@ -156,19 +123,6 @@ namespace SAISKabini
 
         }
 
-
-        private void tblLayP_yikamaBilgileri_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
-        {
-            if (e.Row % 2 == 0)
-            {
-                e.Graphics.FillRectangle(Brushes.WhiteSmoke, e.CellBounds);
-            }
-            else if (e.Row % 2 == 1)
-            {
-                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
-            }
-        }
-
         private void tblLayP_numuneCihazi_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             if (e.Row % 2 == 0)
@@ -181,12 +135,8 @@ namespace SAISKabini
             }
         }
 
-        private void tblLayP_kabinDurumu_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
-            if (e.Row % 2 == 0)
-            {
-                e.Graphics.FillRectangle(Brushes.WhiteSmoke, e.CellBounds);
-            }
+        }
             else if (e.Row % 2 == 1)
             {
                 e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
@@ -248,13 +198,11 @@ namespace SAISKabini
                 Iletkenlik_Status = status
             };
 
-            SqlSave sqlSave = new SqlSave();
-            sqlSave.sendDataSave(data);
 
-            //var res = Services.sendData(data);
 
-            #endregion
         }
+
+
 
         private void timer_PlcConnect_Tick(object sender, EventArgs e)
         {
@@ -512,6 +460,10 @@ namespace SAISKabini
                     loopCountAvgMin = 0;
                 }
                 #endregion
+
+                SonYikamayaKalan();
+                SonHaftalikYikamayaKalan();
+
             };
 
             if (plc.Connected())
@@ -522,6 +474,45 @@ namespace SAISKabini
             {
                 plc.Reconnect();
                 //logekle
+            }
+        }
+
+        private void SonYikamayaKalan()
+        {
+            if (DateTime.Now.Hour >= 18)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(23, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+            else if (DateTime.Now.Hour >= 12 && DateTime.Now.Hour <= 18)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(17, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+            else if (DateTime.Now.Hour >= 6 && DateTime.Now.Hour <= 12)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(11, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+            else if (DateTime.Now.Hour >= 0 && DateTime.Now.Hour <= 6)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(5, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+        }
+
+        private void SonHaftalikYikamayaKalan()
+        {
+            DateTime tDT = DateTime.Now;
+
+            int gun = (int)tDT.DayOfWeek;
+            int kalangun;
+
+            if ((int)tDT.DayOfWeek != 1)
+            {
+                kalangun = 7 - (int)tDT.DayOfWeek;
+                int normalGun = tDT.Day + kalangun;
+                DateTime yikamaZamani = new DateTime(tDT.Year, tDT.Month, normalGun, 6, 40, 0);
+
+                //TimeSpan ts = yikamaZamani - DateTime.Now;
+                string ayAdi = yikamaZamani.ToString("MMMM", new CultureInfo("tr-TR"));
+                lbl_birSonrakiHaftalikYikama.Text = yikamaZamani.Day + " " + ayAdi + " Saat: " + yikamaZamani.Hour + ":" + yikamaZamani.Minute;
             }
         }
     }

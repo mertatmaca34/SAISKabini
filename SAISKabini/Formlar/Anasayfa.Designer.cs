@@ -29,45 +29,82 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.lbl_acilStopDesc = new System.Windows.Forms.Label();
-            this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_dumanLastUpdate = new System.Windows.Forms.Label();
-            this.lbl_acilStopStateTime = new System.Windows.Forms.Label();
-            this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_dumanInstantValue = new System.Windows.Forms.Label();
-            this.lbl_pompa2TermikStateTime = new System.Windows.Forms.Label();
-            this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_dumanDesc = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.lbl_pompa2TermikDesc = new System.Windows.Forms.Label();
-            this.lbl_pompa2TermikInstantValue = new System.Windows.Forms.Label();
-            this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_acilStopLastUpdate = new System.Windows.Forms.Label();
-            this.lbl_pompa2TermikLastUpdate = new System.Windows.Forms.Label();
-            this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_acilStopInstantValue = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
-            this.label37 = new System.Windows.Forms.Label();
+            this.home_tableLayoutPanel_top = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.akmLastUpdate = new System.Windows.Forms.Label();
+            this.phLastUpdate = new System.Windows.Forms.Label();
+            this.KOiLastUpdate = new System.Windows.Forms.Label();
+            this.debiLastUpdate = new System.Windows.Forms.Label();
+            this.iletkenlikLastUpdate = new System.Windows.Forms.Label();
+            this.akisHiziLastUpdate = new System.Windows.Forms.Label();
+            this.oksijenLastUpdate = new System.Windows.Forms.Label();
+            this.sicaklikLastUpdate = new System.Windows.Forms.Label();
+            this.instantOksijenValue = new System.Windows.Forms.Label();
+            this.instantKOiValue = new System.Windows.Forms.Label();
+            this.instantSicaklikValue = new System.Windows.Forms.Label();
+            this.instantPhValue = new System.Windows.Forms.Label();
+            this.instantIletkenlikValue = new System.Windows.Forms.Label();
+            this.instantAkmValue = new System.Windows.Forms.Label();
+            this.instantAkisHiziValue = new System.Windows.Forms.Label();
+            this.lbl_minAvgIletkenlik = new System.Windows.Forms.Label();
+            this.lbl_minAvgKOi = new System.Windows.Forms.Label();
+            this.lbl_minAvgPh = new System.Windows.Forms.Label();
+            this.lbl_minAvgDebi = new System.Windows.Forms.Label();
+            this.lbl_minAvgAkm = new System.Windows.Forms.Label();
+            this.lbl_minAvgOksijen = new System.Windows.Forms.Label();
+            this.lbl_minAvgSicaklik = new System.Windows.Forms.Label();
+            this.lbl_minAvgDesarjDebi = new System.Windows.Forms.Label();
+            this.instantDebiValue = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.desarjDebiLastUpdate = new System.Windows.Forms.Label();
+            this.instantDesarjDebiValue = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_hourAvgPh = new System.Windows.Forms.Label();
+            this.lbl_minAvgAkisHizi = new System.Windows.Forms.Label();
+            this.lbl_hourAvgOksijen = new System.Windows.Forms.Label();
+            this.lbl_hourAvgIletkenlik = new System.Windows.Forms.Label();
+            this.lbl_hourAvgAkisHizi = new System.Windows.Forms.Label();
+            this.lbl_hourAvgDebi = new System.Windows.Forms.Label();
+            this.lbl_hourAvgSicaklik = new System.Windows.Forms.Label();
+            this.lbl_hourAvgDesarjDebi = new System.Windows.Forms.Label();
+            this.lbl_hourAvgAkm = new System.Windows.Forms.Label();
+            this.lbl_hourAvgKOi = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.lbl_numuneTetikveTarih = new System.Windows.Forms.Label();
+            this.home_tableLayoutPanel_down = new System.Windows.Forms.TableLayoutPanel();
             this.label96 = new System.Windows.Forms.Label();
             this.lbl_yikamaTankiLastUpdate = new System.Windows.Forms.Label();
-            this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_dumanStateTime = new System.Windows.Forms.Label();
-            this.lbl_yikamaTankiDesc = new System.Windows.Forms.Label();
-            this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
-            this.label58 = new System.Windows.Forms.Label();
-            this.lbl_numuneTetikveTarih = new System.Windows.Forms.Label();
             this.lbl_yikamaTankiInstantValue = new System.Windows.Forms.Label();
-            this.home_tableLayoutPanel_down = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
-            this.label59 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel40 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_yikamaTankiDesc = new System.Windows.Forms.Label();
+            this.lbl_pompa2TermikLastUpdate = new System.Windows.Forms.Label();
+            this.lbl_pompa2TermikInstantValue = new System.Windows.Forms.Label();
+            this.lbl_pompa2TermikDesc = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.lbl_acilStopLastUpdate = new System.Windows.Forms.Label();
+            this.lbl_acilStopInstantValue = new System.Windows.Forms.Label();
+            this.lbl_acilStopDesc = new System.Windows.Forms.Label();
+            this.lbl_dumanInstantValue = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.lbl_kapiLastUpdate = new System.Windows.Forms.Label();
             this.lbl_kapiInstantValue = new System.Windows.Forms.Label();
@@ -89,25 +126,6 @@
             this.lbl_temizSuTermikDesc = new System.Windows.Forms.Label();
             this.lbl_pompa1TermikDesc = new System.Windows.Forms.Label();
             this.lbl_suBaskiniDesc = new System.Windows.Forms.Label();
-            this.lbl_suBaskiniStateTime = new System.Windows.Forms.Label();
-            this.lbl_pompa1TermikStateTime = new System.Windows.Forms.Label();
-            this.lbl_temizSuTermikStateTime = new System.Windows.Forms.Label();
-            this.lbl_enerjiStateTime = new System.Windows.Forms.Label();
-            this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel48 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel50 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel51 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel52 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_yikamaTankiStateTime = new System.Windows.Forms.Label();
-            this.lbl_hourAvgAkisHizi = new System.Windows.Forms.Label();
-            this.lbl_minAvgAkisHizi = new System.Windows.Forms.Label();
             this.lbl_birSonrakiHaftalikYikama = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
@@ -141,109 +159,7 @@
             this.label128 = new System.Windows.Forms.Label();
             this.tblLayP_yikamaBilgileri = new System.Windows.Forms.TableLayoutPanel();
             this.timer_PlcConnect = new System.Windows.Forms.Timer(this.components);
-            this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
             this.tblLayP_numuneCihazi = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.akmLastUpdate = new System.Windows.Forms.Label();
-            this.instantAkmValue = new System.Windows.Forms.Label();
-            this.lbl_minAvgAkm = new System.Windows.Forms.Label();
-            this.lbl_hourAvgAkm = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.desarjDebiLastUpdate = new System.Windows.Forms.Label();
-            this.iletkenlikLastUpdate = new System.Windows.Forms.Label();
-            this.phLastUpdate = new System.Windows.Forms.Label();
-            this.debiLastUpdate = new System.Windows.Forms.Label();
-            this.instantDebiValue = new System.Windows.Forms.Label();
-            this.instantPhValue = new System.Windows.Forms.Label();
-            this.instantIletkenlikValue = new System.Windows.Forms.Label();
-            this.instantDesarjDebiValue = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.home_tableLayoutPanel_top = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.instantKOiValue = new System.Windows.Forms.Label();
-            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.KOiLastUpdate = new System.Windows.Forms.Label();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_hourAvgOksijen = new System.Windows.Forms.Label();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_minAvgOksijen = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.instantOksijenValue = new System.Windows.Forms.Label();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.oksijenLastUpdate = new System.Windows.Forms.Label();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_minAvgDesarjDebi = new System.Windows.Forms.Label();
-            this.lbl_minAvgIletkenlik = new System.Windows.Forms.Label();
-            this.lbl_minAvgPh = new System.Windows.Forms.Label();
-            this.lbl_minAvgDebi = new System.Windows.Forms.Label();
-            this.lbl_hourAvgDebi = new System.Windows.Forms.Label();
-            this.lbl_hourAvgPh = new System.Windows.Forms.Label();
-            this.lbl_hourAvgIletkenlik = new System.Windows.Forms.Label();
-            this.lbl_hourAvgDesarjDebi = new System.Windows.Forms.Label();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_minAvgKOi = new System.Windows.Forms.Label();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_hourAvgKOi = new System.Windows.Forms.Label();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_hourAvgSicaklik = new System.Windows.Forms.Label();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_minAvgSicaklik = new System.Windows.Forms.Label();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.instantSicaklikValue = new System.Windows.Forms.Label();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.sicaklikLastUpdate = new System.Windows.Forms.Label();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
-            this.akisHiziLastUpdate = new System.Windows.Forms.Label();
-            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.instantAkisHiziValue = new System.Windows.Forms.Label();
-            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel34.SuspendLayout();
-            this.tableLayoutPanel33.SuspendLayout();
-            this.tableLayoutPanel32.SuspendLayout();
-            this.tableLayoutPanel30.SuspendLayout();
-            this.tableLayoutPanel29.SuspendLayout();
-            this.tableLayoutPanel28.SuspendLayout();
-            this.tableLayoutPanel31.SuspendLayout();
-            this.tableLayoutPanel35.SuspendLayout();
             this.home_tableLayoutPanel_down.SuspendLayout();
             this.tableLayoutPanel36.SuspendLayout();
             this.tableLayoutPanel37.SuspendLayout();
@@ -265,436 +181,68 @@
             this.tblLayP_kabinDurumu.SuspendLayout();
             this.tblLayP_istasyonBilgileri.SuspendLayout();
             this.tblLayP_yikamaBilgileri.SuspendLayout();
-            this.tableLayoutPanel27.SuspendLayout();
             this.tblLayP_numuneCihazi.SuspendLayout();
-            this.tableLayoutPanel26.SuspendLayout();
-            this.home_tableLayoutPanel_top.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel14.SuspendLayout();
-            this.tableLayoutPanel13.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            this.tableLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
-            this.tableLayoutPanel21.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            this.tableLayoutPanel23.SuspendLayout();
-            this.tableLayoutPanel24.SuspendLayout();
-            this.tableLayoutPanel25.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label60
             // 
-            this.label60.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label60.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label60.Location = new System.Drawing.Point(69, 5);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(64, 23);
-            this.label60.TabIndex = 0;
-            this.label60.Text = "Durum";
             // 
-            // label62
             // 
-            this.label62.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label62.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label62.Location = new System.Drawing.Point(69, 5);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(64, 23);
-            this.label62.TabIndex = 0;
-            this.label62.Text = "Sensör";
             // 
-            // label63
             // 
-            this.label63.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label63.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label63.Location = new System.Drawing.Point(66, 7);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(70, 19);
-            this.label63.TabIndex = 0;
-            this.label63.Text = "Acil Stop";
             // 
-            // lbl_acilStopDesc
             // 
-            this.lbl_acilStopDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_acilStopDesc.AutoSize = true;
-            this.lbl_acilStopDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_acilStopDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_acilStopDesc.Location = new System.Drawing.Point(94, 7);
-            this.lbl_acilStopDesc.Name = "lbl_acilStopDesc";
-            this.lbl_acilStopDesc.Size = new System.Drawing.Size(14, 19);
-            this.lbl_acilStopDesc.TabIndex = 0;
-            this.lbl_acilStopDesc.Text = "-";
             // 
-            // tableLayoutPanel34
             // 
-            this.tableLayoutPanel34.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel34.ColumnCount = 1;
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel34.Controls.Add(this.lbl_dumanLastUpdate, 0, 0);
-            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel34.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel34.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(208, 71);
-            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
-            this.tableLayoutPanel34.RowCount = 1;
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel34.TabIndex = 2;
             // 
-            // lbl_dumanLastUpdate
             // 
-            this.lbl_dumanLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_dumanLastUpdate.AutoSize = true;
-            this.lbl_dumanLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.lbl_dumanLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbl_dumanLastUpdate.Location = new System.Drawing.Point(96, 10);
-            this.lbl_dumanLastUpdate.Name = "lbl_dumanLastUpdate";
-            this.lbl_dumanLastUpdate.Size = new System.Drawing.Size(10, 13);
-            this.lbl_dumanLastUpdate.TabIndex = 0;
-            this.lbl_dumanLastUpdate.Text = "-";
             // 
-            // lbl_acilStopStateTime
             // 
-            this.lbl_acilStopStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_acilStopStateTime.AutoSize = true;
-            this.lbl_acilStopStateTime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_acilStopStateTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_acilStopStateTime.Location = new System.Drawing.Point(94, 7);
-            this.lbl_acilStopStateTime.Name = "lbl_acilStopStateTime";
-            this.lbl_acilStopStateTime.Size = new System.Drawing.Size(14, 19);
-            this.lbl_acilStopStateTime.TabIndex = 0;
-            this.lbl_acilStopStateTime.Text = "-";
             // 
-            // tableLayoutPanel33
             // 
-            this.tableLayoutPanel33.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel33.ColumnCount = 1;
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel33.Controls.Add(this.lbl_dumanInstantValue, 0, 0);
-            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel33.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel33.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(411, 71);
-            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
-            this.tableLayoutPanel33.RowCount = 1;
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel33.TabIndex = 2;
             // 
-            // lbl_dumanInstantValue
             // 
-            this.lbl_dumanInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_dumanInstantValue.AutoSize = true;
-            this.lbl_dumanInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_dumanInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_dumanInstantValue.Location = new System.Drawing.Point(94, 7);
-            this.lbl_dumanInstantValue.Name = "lbl_dumanInstantValue";
-            this.lbl_dumanInstantValue.Size = new System.Drawing.Size(14, 19);
-            this.lbl_dumanInstantValue.TabIndex = 0;
-            this.lbl_dumanInstantValue.Text = "-";
             // 
-            // lbl_pompa2TermikStateTime
             // 
-            this.lbl_pompa2TermikStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_pompa2TermikStateTime.AutoSize = true;
-            this.lbl_pompa2TermikStateTime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_pompa2TermikStateTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_pompa2TermikStateTime.Location = new System.Drawing.Point(94, 7);
-            this.lbl_pompa2TermikStateTime.Name = "lbl_pompa2TermikStateTime";
-            this.lbl_pompa2TermikStateTime.Size = new System.Drawing.Size(14, 19);
-            this.lbl_pompa2TermikStateTime.TabIndex = 0;
-            this.lbl_pompa2TermikStateTime.Text = "-";
             // 
-            // tableLayoutPanel32
             // 
-            this.tableLayoutPanel32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel32.ColumnCount = 1;
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel32.Controls.Add(this.lbl_dumanDesc, 0, 0);
-            this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel32.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel32.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel32.Location = new System.Drawing.Point(614, 71);
-            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel32.Name = "tableLayoutPanel32";
-            this.tableLayoutPanel32.RowCount = 1;
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel32.TabIndex = 2;
             // 
-            // lbl_dumanDesc
             // 
-            this.lbl_dumanDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_dumanDesc.AutoSize = true;
-            this.lbl_dumanDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_dumanDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_dumanDesc.Location = new System.Drawing.Point(94, 7);
-            this.lbl_dumanDesc.Name = "lbl_dumanDesc";
-            this.lbl_dumanDesc.Size = new System.Drawing.Size(14, 19);
-            this.lbl_dumanDesc.TabIndex = 0;
-            this.lbl_dumanDesc.Text = "-";
             // 
-            // label61
             // 
-            this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label61.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label61.Location = new System.Drawing.Point(32, 5);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(138, 23);
-            this.label61.TabIndex = 0;
-            this.label61.Text = "Son Güncelleme";
             // 
-            // lbl_pompa2TermikDesc
             // 
-            this.lbl_pompa2TermikDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_pompa2TermikDesc.AutoSize = true;
-            this.lbl_pompa2TermikDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_pompa2TermikDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_pompa2TermikDesc.Location = new System.Drawing.Point(94, 7);
-            this.lbl_pompa2TermikDesc.Name = "lbl_pompa2TermikDesc";
-            this.lbl_pompa2TermikDesc.Size = new System.Drawing.Size(14, 19);
-            this.lbl_pompa2TermikDesc.TabIndex = 0;
-            this.lbl_pompa2TermikDesc.Text = "-";
             // 
-            // lbl_pompa2TermikInstantValue
             // 
-            this.lbl_pompa2TermikInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_pompa2TermikInstantValue.AutoSize = true;
-            this.lbl_pompa2TermikInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_pompa2TermikInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_pompa2TermikInstantValue.Location = new System.Drawing.Point(94, 7);
-            this.lbl_pompa2TermikInstantValue.Name = "lbl_pompa2TermikInstantValue";
-            this.lbl_pompa2TermikInstantValue.Size = new System.Drawing.Size(14, 19);
-            this.lbl_pompa2TermikInstantValue.TabIndex = 0;
-            this.lbl_pompa2TermikInstantValue.Text = "-";
             // 
-            // tableLayoutPanel30
             // 
-            this.tableLayoutPanel30.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel30.ColumnCount = 1;
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel30.Controls.Add(this.lbl_acilStopLastUpdate, 0, 0);
-            this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel30.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel30.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(208, 137);
-            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel30.Name = "tableLayoutPanel30";
-            this.tableLayoutPanel30.RowCount = 1;
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel30.TabIndex = 2;
             // 
-            // lbl_acilStopLastUpdate
             // 
-            this.lbl_acilStopLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_acilStopLastUpdate.AutoSize = true;
-            this.lbl_acilStopLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.lbl_acilStopLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbl_acilStopLastUpdate.Location = new System.Drawing.Point(96, 10);
-            this.lbl_acilStopLastUpdate.Name = "lbl_acilStopLastUpdate";
-            this.lbl_acilStopLastUpdate.Size = new System.Drawing.Size(10, 13);
-            this.lbl_acilStopLastUpdate.TabIndex = 0;
-            this.lbl_acilStopLastUpdate.Text = "-";
             // 
-            // lbl_pompa2TermikLastUpdate
             // 
-            this.lbl_pompa2TermikLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_pompa2TermikLastUpdate.AutoSize = true;
-            this.lbl_pompa2TermikLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.lbl_pompa2TermikLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbl_pompa2TermikLastUpdate.Location = new System.Drawing.Point(96, 10);
-            this.lbl_pompa2TermikLastUpdate.Name = "lbl_pompa2TermikLastUpdate";
-            this.lbl_pompa2TermikLastUpdate.Size = new System.Drawing.Size(10, 13);
-            this.lbl_pompa2TermikLastUpdate.TabIndex = 0;
-            this.lbl_pompa2TermikLastUpdate.Text = "-";
             // 
-            // tableLayoutPanel29
             // 
-            this.tableLayoutPanel29.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel29.ColumnCount = 1;
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel29.Controls.Add(this.lbl_acilStopInstantValue, 0, 0);
-            this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel29.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel29.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(411, 137);
-            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel29.Name = "tableLayoutPanel29";
-            this.tableLayoutPanel29.RowCount = 1;
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel29.TabIndex = 2;
             // 
-            // lbl_acilStopInstantValue
             // 
-            this.lbl_acilStopInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_acilStopInstantValue.AutoSize = true;
-            this.lbl_acilStopInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_acilStopInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_acilStopInstantValue.Location = new System.Drawing.Point(94, 7);
-            this.lbl_acilStopInstantValue.Name = "lbl_acilStopInstantValue";
-            this.lbl_acilStopInstantValue.Size = new System.Drawing.Size(14, 19);
-            this.lbl_acilStopInstantValue.TabIndex = 0;
-            this.lbl_acilStopInstantValue.Text = "-";
             // 
-            // label95
             // 
-            this.label95.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label95.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label95.Location = new System.Drawing.Point(42, 7);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(119, 19);
-            this.label95.TabIndex = 1;
-            this.label95.Text = "Pompa 2 Termik";
             // 
-            // tableLayoutPanel28
             // 
-            this.tableLayoutPanel28.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel28.ColumnCount = 1;
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel28.Controls.Add(this.label37, 0, 0);
-            this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel28.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel28.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(817, 5);
-            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel28.Name = "tableLayoutPanel28";
-            this.tableLayoutPanel28.RowCount = 1;
-            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel28.TabIndex = 2;
             // 
-            // label37
             // 
-            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label37.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label37.Location = new System.Drawing.Point(23, 5);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(156, 23);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Aynı Durum Süresi";
             // 
-            // label96
             // 
-            this.label96.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label96.AutoSize = true;
-            this.label96.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label96.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label96.Location = new System.Drawing.Point(53, 7);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(97, 19);
-            this.label96.TabIndex = 1;
-            this.label96.Text = "Yıkama Tankı";
             // 
-            // lbl_yikamaTankiLastUpdate
             // 
-            this.lbl_yikamaTankiLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_yikamaTankiLastUpdate.AutoSize = true;
-            this.lbl_yikamaTankiLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.lbl_yikamaTankiLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbl_yikamaTankiLastUpdate.Location = new System.Drawing.Point(96, 10);
-            this.lbl_yikamaTankiLastUpdate.Name = "lbl_yikamaTankiLastUpdate";
-            this.lbl_yikamaTankiLastUpdate.Size = new System.Drawing.Size(10, 13);
-            this.lbl_yikamaTankiLastUpdate.TabIndex = 1;
-            this.lbl_yikamaTankiLastUpdate.Text = "-";
             // 
-            // tableLayoutPanel31
             // 
-            this.tableLayoutPanel31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel31.ColumnCount = 1;
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel31.Controls.Add(this.lbl_dumanStateTime, 0, 0);
-            this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel31.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel31.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(817, 71);
-            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel31.Name = "tableLayoutPanel31";
-            this.tableLayoutPanel31.RowCount = 1;
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel31.TabIndex = 2;
             // 
-            // lbl_dumanStateTime
             // 
-            this.lbl_dumanStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_dumanStateTime.AutoSize = true;
-            this.lbl_dumanStateTime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_dumanStateTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_dumanStateTime.Location = new System.Drawing.Point(94, 7);
-            this.lbl_dumanStateTime.Name = "lbl_dumanStateTime";
-            this.lbl_dumanStateTime.Size = new System.Drawing.Size(14, 19);
-            this.lbl_dumanStateTime.TabIndex = 0;
-            this.lbl_dumanStateTime.Text = "-";
             // 
-            // lbl_yikamaTankiDesc
             // 
-            this.lbl_yikamaTankiDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_yikamaTankiDesc.AutoSize = true;
-            this.lbl_yikamaTankiDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_yikamaTankiDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_yikamaTankiDesc.Location = new System.Drawing.Point(94, 7);
-            this.lbl_yikamaTankiDesc.Name = "lbl_yikamaTankiDesc";
-            this.lbl_yikamaTankiDesc.Size = new System.Drawing.Size(14, 19);
-            this.lbl_yikamaTankiDesc.TabIndex = 1;
-            this.lbl_yikamaTankiDesc.Text = "-";
             // 
-            // tableLayoutPanel35
             // 
-            this.tableLayoutPanel35.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel35.ColumnCount = 1;
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel35.Controls.Add(this.label58, 0, 0);
-            this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel35.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel35.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel35.Location = new System.Drawing.Point(5, 71);
-            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel35.Name = "tableLayoutPanel35";
-            this.tableLayoutPanel35.RowCount = 1;
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel35.TabIndex = 2;
             // 
-            // label58
             // 
-            this.label58.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label58.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label58.Location = new System.Drawing.Point(72, 7);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(58, 19);
-            this.label58.TabIndex = 0;
-            this.label58.Text = "Duman";
             // 
             // lbl_numuneTetikveTarih
             // 
@@ -724,26 +272,9 @@
             // 
             this.home_tableLayoutPanel_down.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.home_tableLayoutPanel_down.BackColor = System.Drawing.Color.White;
-            this.home_tableLayoutPanel_down.ColumnCount = 6;
             this.home_tableLayoutPanel_down.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.home_tableLayoutPanel_down.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.home_tableLayoutPanel_down.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.home_tableLayoutPanel_down.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.home_tableLayoutPanel_down.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.home_tableLayoutPanel_down.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel28, 4, 0);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel29, 2, 4);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel30, 1, 4);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel31, 4, 2);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel32, 3, 2);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel33, 2, 2);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel34, 1, 2);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel35, 0, 2);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel36, 3, 0);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel37, 2, 0);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel38, 1, 0);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel39, 0, 0);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel40, 0, 4);
             this.home_tableLayoutPanel_down.Controls.Add(this.label64, 0, 1);
             this.home_tableLayoutPanel_down.Controls.Add(this.lbl_kapiLastUpdate, 1, 1);
             this.home_tableLayoutPanel_down.Controls.Add(this.lbl_kapiInstantValue, 2, 1);
@@ -765,31 +296,6 @@
             this.home_tableLayoutPanel_down.Controls.Add(this.lbl_temizSuTermikDesc, 3, 7);
             this.home_tableLayoutPanel_down.Controls.Add(this.lbl_pompa1TermikDesc, 3, 5);
             this.home_tableLayoutPanel_down.Controls.Add(this.lbl_suBaskiniDesc, 3, 3);
-            this.home_tableLayoutPanel_down.Controls.Add(this.lbl_suBaskiniStateTime, 4, 3);
-            this.home_tableLayoutPanel_down.Controls.Add(this.lbl_pompa1TermikStateTime, 4, 5);
-            this.home_tableLayoutPanel_down.Controls.Add(this.lbl_temizSuTermikStateTime, 4, 7);
-            this.home_tableLayoutPanel_down.Controls.Add(this.lbl_enerjiStateTime, 4, 9);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel41, 3, 4);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel42, 4, 4);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel43, 4, 6);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel44, 3, 6);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel45, 2, 6);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel46, 1, 6);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel47, 0, 6);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel48, 0, 8);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel49, 1, 8);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel50, 2, 8);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel51, 3, 8);
-            this.home_tableLayoutPanel_down.Controls.Add(this.tableLayoutPanel52, 4, 8);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel10, 5, 1);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel11, 5, 2);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel12, 5, 3);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel13, 5, 4);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel14, 5, 5);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel15, 5, 6);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel16, 5, 7);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel17, 5, 8);
-            this.home_tableLayoutPanel_down.Controls.Add(this.panel18, 5, 9);
             this.home_tableLayoutPanel_down.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
             this.home_tableLayoutPanel_down.ForeColor = System.Drawing.SystemColors.ControlText;
             this.home_tableLayoutPanel_down.Location = new System.Drawing.Point(10, 381);
@@ -797,120 +303,33 @@
             this.home_tableLayoutPanel_down.Name = "home_tableLayoutPanel_down";
             this.home_tableLayoutPanel_down.Padding = new System.Windows.Forms.Padding(5);
             this.home_tableLayoutPanel_down.RowCount = 10;
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.home_tableLayoutPanel_down.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
             this.home_tableLayoutPanel_down.Size = new System.Drawing.Size(1046, 344);
             this.home_tableLayoutPanel_down.TabIndex = 0;
             // 
-            // tableLayoutPanel36
             // 
-            this.tableLayoutPanel36.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel36.ColumnCount = 1;
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.Controls.Add(this.label59, 0, 0);
-            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel36.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(614, 5);
-            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
-            this.tableLayoutPanel36.RowCount = 1;
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel36.TabIndex = 2;
             // 
             // label59
             // 
             this.label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.Color.Transparent;
             this.label59.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.label59.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label59.Location = new System.Drawing.Point(60, 5);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(82, 23);
-            this.label59.TabIndex = 0;
             this.label59.Text = "Açıklama";
             // 
-            // tableLayoutPanel37
             // 
-            this.tableLayoutPanel37.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel37.ColumnCount = 1;
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.Controls.Add(this.label60, 0, 0);
-            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel37.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel37.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(411, 5);
-            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
-            this.tableLayoutPanel37.RowCount = 1;
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel37.TabIndex = 2;
             // 
-            // tableLayoutPanel38
             // 
-            this.tableLayoutPanel38.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel38.ColumnCount = 1;
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.Controls.Add(this.label61, 0, 0);
-            this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel38.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel38.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel38.Location = new System.Drawing.Point(208, 5);
-            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel38.Name = "tableLayoutPanel38";
-            this.tableLayoutPanel38.RowCount = 1;
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel38.TabIndex = 2;
             // 
-            // tableLayoutPanel39
             // 
-            this.tableLayoutPanel39.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel39.ColumnCount = 1;
-            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.Controls.Add(this.label62, 0, 0);
-            this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel39.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel39.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel39.Location = new System.Drawing.Point(5, 5);
-            this.tableLayoutPanel39.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel39.Name = "tableLayoutPanel39";
-            this.tableLayoutPanel39.RowCount = 1;
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel39.TabIndex = 2;
-            // 
-            // tableLayoutPanel40
-            // 
-            this.tableLayoutPanel40.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel40.ColumnCount = 1;
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.Controls.Add(this.label63, 0, 0);
-            this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel40.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel40.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel40.Location = new System.Drawing.Point(5, 137);
-            this.tableLayoutPanel40.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel40.Name = "tableLayoutPanel40";
-            this.tableLayoutPanel40.RowCount = 1;
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel40.TabIndex = 2;
             // 
             // label64
             // 
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label64.AutoSize = true;
+            this.label64.BackColor = System.Drawing.Color.Transparent;
             this.label64.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.label64.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label64.Location = new System.Drawing.Point(85, 45);
@@ -923,6 +342,7 @@
             // 
             this.lbl_kapiLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_kapiLastUpdate.AutoSize = true;
+            this.lbl_kapiLastUpdate.BackColor = System.Drawing.Color.Transparent;
             this.lbl_kapiLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
             this.lbl_kapiLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbl_kapiLastUpdate.Location = new System.Drawing.Point(304, 48);
@@ -935,6 +355,7 @@
             // 
             this.lbl_kapiInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_kapiInstantValue.AutoSize = true;
+            this.lbl_kapiInstantValue.BackColor = System.Drawing.Color.Transparent;
             this.lbl_kapiInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_kapiInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbl_kapiInstantValue.Location = new System.Drawing.Point(505, 45);
@@ -947,9 +368,9 @@
             // 
             this.lbl_kapiDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_kapiDesc.AutoSize = true;
+            this.lbl_kapiDesc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_kapiDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_kapiDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_kapiDesc.Location = new System.Drawing.Point(708, 45);
             this.lbl_kapiDesc.Name = "lbl_kapiDesc";
             this.lbl_kapiDesc.Size = new System.Drawing.Size(14, 19);
             this.lbl_kapiDesc.TabIndex = 0;
@@ -971,6 +392,7 @@
             // 
             this.label69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label69.AutoSize = true;
+            this.label69.BackColor = System.Drawing.Color.Transparent;
             this.label69.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.label69.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label69.Location = new System.Drawing.Point(67, 111);
@@ -983,6 +405,7 @@
             // 
             this.label70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
             this.label70.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.label70.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label70.Location = new System.Drawing.Point(47, 177);
@@ -995,6 +418,7 @@
             // 
             this.label71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label71.AutoSize = true;
+            this.label71.BackColor = System.Drawing.Color.Transparent;
             this.label71.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.label71.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label71.Location = new System.Drawing.Point(21, 243);
@@ -1007,6 +431,7 @@
             // 
             this.label72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label72.AutoSize = true;
+            this.label72.BackColor = System.Drawing.Color.Transparent;
             this.label72.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.label72.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label72.Location = new System.Drawing.Point(82, 311);
@@ -1019,6 +444,7 @@
             // 
             this.lbl_enerjiLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_enerjiLastUpdate.AutoSize = true;
+            this.lbl_enerjiLastUpdate.BackColor = System.Drawing.Color.Transparent;
             this.lbl_enerjiLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
             this.lbl_enerjiLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbl_enerjiLastUpdate.Location = new System.Drawing.Point(304, 314);
@@ -1031,6 +457,7 @@
             // 
             this.lbl_TemizSuTermikLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_TemizSuTermikLastUpdate.AutoSize = true;
+            this.lbl_TemizSuTermikLastUpdate.BackColor = System.Drawing.Color.Transparent;
             this.lbl_TemizSuTermikLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
             this.lbl_TemizSuTermikLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbl_TemizSuTermikLastUpdate.Location = new System.Drawing.Point(304, 246);
@@ -1043,6 +470,7 @@
             // 
             this.lbl_pompa1TermikLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pompa1TermikLastUpdate.AutoSize = true;
+            this.lbl_pompa1TermikLastUpdate.BackColor = System.Drawing.Color.Transparent;
             this.lbl_pompa1TermikLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
             this.lbl_pompa1TermikLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbl_pompa1TermikLastUpdate.Location = new System.Drawing.Point(304, 180);
@@ -1055,6 +483,7 @@
             // 
             this.lbl_suBaskiniLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_suBaskiniLastUpdate.AutoSize = true;
+            this.lbl_suBaskiniLastUpdate.BackColor = System.Drawing.Color.Transparent;
             this.lbl_suBaskiniLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
             this.lbl_suBaskiniLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbl_suBaskiniLastUpdate.Location = new System.Drawing.Point(304, 114);
@@ -1067,6 +496,7 @@
             // 
             this.lbl_suBaskiniInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_suBaskiniInstantValue.AutoSize = true;
+            this.lbl_suBaskiniInstantValue.BackColor = System.Drawing.Color.Transparent;
             this.lbl_suBaskiniInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_suBaskiniInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbl_suBaskiniInstantValue.Location = new System.Drawing.Point(505, 111);
@@ -1079,6 +509,7 @@
             // 
             this.lbl_pompa1TermikInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pompa1TermikInstantValue.AutoSize = true;
+            this.lbl_pompa1TermikInstantValue.BackColor = System.Drawing.Color.Transparent;
             this.lbl_pompa1TermikInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_pompa1TermikInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbl_pompa1TermikInstantValue.Location = new System.Drawing.Point(505, 177);
@@ -1091,6 +522,7 @@
             // 
             this.lbl_temizSuTermikInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_temizSuTermikInstantValue.AutoSize = true;
+            this.lbl_temizSuTermikInstantValue.BackColor = System.Drawing.Color.Transparent;
             this.lbl_temizSuTermikInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_temizSuTermikInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbl_temizSuTermikInstantValue.Location = new System.Drawing.Point(505, 243);
@@ -1103,6 +535,7 @@
             // 
             this.lbl_enerjiInstantValue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_enerjiInstantValue.AutoSize = true;
+            this.lbl_enerjiInstantValue.BackColor = System.Drawing.Color.Transparent;
             this.lbl_enerjiInstantValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_enerjiInstantValue.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbl_enerjiInstantValue.Location = new System.Drawing.Point(505, 311);
@@ -1115,9 +548,9 @@
             // 
             this.lbl_enerjiDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_enerjiDesc.AutoSize = true;
+            this.lbl_enerjiDesc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_enerjiDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_enerjiDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_enerjiDesc.Location = new System.Drawing.Point(708, 311);
             this.lbl_enerjiDesc.Name = "lbl_enerjiDesc";
             this.lbl_enerjiDesc.Size = new System.Drawing.Size(14, 19);
             this.lbl_enerjiDesc.TabIndex = 0;
@@ -1127,9 +560,9 @@
             // 
             this.lbl_temizSuTermikDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_temizSuTermikDesc.AutoSize = true;
+            this.lbl_temizSuTermikDesc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_temizSuTermikDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_temizSuTermikDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_temizSuTermikDesc.Location = new System.Drawing.Point(708, 243);
             this.lbl_temizSuTermikDesc.Name = "lbl_temizSuTermikDesc";
             this.lbl_temizSuTermikDesc.Size = new System.Drawing.Size(14, 19);
             this.lbl_temizSuTermikDesc.TabIndex = 0;
@@ -1139,9 +572,9 @@
             // 
             this.lbl_pompa1TermikDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_pompa1TermikDesc.AutoSize = true;
+            this.lbl_pompa1TermikDesc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_pompa1TermikDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_pompa1TermikDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_pompa1TermikDesc.Location = new System.Drawing.Point(708, 177);
             this.lbl_pompa1TermikDesc.Name = "lbl_pompa1TermikDesc";
             this.lbl_pompa1TermikDesc.Size = new System.Drawing.Size(14, 19);
             this.lbl_pompa1TermikDesc.TabIndex = 0;
@@ -1151,267 +584,35 @@
             // 
             this.lbl_suBaskiniDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_suBaskiniDesc.AutoSize = true;
+            this.lbl_suBaskiniDesc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_suBaskiniDesc.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.lbl_suBaskiniDesc.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_suBaskiniDesc.Location = new System.Drawing.Point(708, 111);
             this.lbl_suBaskiniDesc.Name = "lbl_suBaskiniDesc";
             this.lbl_suBaskiniDesc.Size = new System.Drawing.Size(14, 19);
             this.lbl_suBaskiniDesc.TabIndex = 0;
             this.lbl_suBaskiniDesc.Text = "-";
             // 
-            // lbl_suBaskiniStateTime
             // 
-            this.lbl_suBaskiniStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_suBaskiniStateTime.AutoSize = true;
-            this.lbl_suBaskiniStateTime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_suBaskiniStateTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_suBaskiniStateTime.Location = new System.Drawing.Point(911, 111);
-            this.lbl_suBaskiniStateTime.Name = "lbl_suBaskiniStateTime";
-            this.lbl_suBaskiniStateTime.Size = new System.Drawing.Size(14, 19);
-            this.lbl_suBaskiniStateTime.TabIndex = 0;
-            this.lbl_suBaskiniStateTime.Text = "-";
             // 
-            // lbl_pompa1TermikStateTime
             // 
-            this.lbl_pompa1TermikStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_pompa1TermikStateTime.AutoSize = true;
-            this.lbl_pompa1TermikStateTime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_pompa1TermikStateTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_pompa1TermikStateTime.Location = new System.Drawing.Point(911, 177);
-            this.lbl_pompa1TermikStateTime.Name = "lbl_pompa1TermikStateTime";
-            this.lbl_pompa1TermikStateTime.Size = new System.Drawing.Size(14, 19);
-            this.lbl_pompa1TermikStateTime.TabIndex = 0;
-            this.lbl_pompa1TermikStateTime.Text = "-";
             // 
-            // lbl_temizSuTermikStateTime
             // 
-            this.lbl_temizSuTermikStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_temizSuTermikStateTime.AutoSize = true;
-            this.lbl_temizSuTermikStateTime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_temizSuTermikStateTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_temizSuTermikStateTime.Location = new System.Drawing.Point(911, 243);
-            this.lbl_temizSuTermikStateTime.Name = "lbl_temizSuTermikStateTime";
-            this.lbl_temizSuTermikStateTime.Size = new System.Drawing.Size(14, 19);
-            this.lbl_temizSuTermikStateTime.TabIndex = 0;
-            this.lbl_temizSuTermikStateTime.Text = "-";
             // 
-            // lbl_enerjiStateTime
             // 
-            this.lbl_enerjiStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_enerjiStateTime.AutoSize = true;
-            this.lbl_enerjiStateTime.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_enerjiStateTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_enerjiStateTime.Location = new System.Drawing.Point(911, 311);
-            this.lbl_enerjiStateTime.Name = "lbl_enerjiStateTime";
-            this.lbl_enerjiStateTime.Size = new System.Drawing.Size(14, 19);
-            this.lbl_enerjiStateTime.TabIndex = 0;
-            this.lbl_enerjiStateTime.Text = "-";
             // 
-            // tableLayoutPanel41
             // 
-            this.tableLayoutPanel41.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel41.ColumnCount = 1;
-            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel41.Controls.Add(this.lbl_acilStopDesc, 0, 0);
-            this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel41.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel41.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel41.Location = new System.Drawing.Point(614, 137);
-            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel41.Name = "tableLayoutPanel41";
-            this.tableLayoutPanel41.RowCount = 1;
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel41.TabIndex = 2;
             // 
-            // tableLayoutPanel42
             // 
-            this.tableLayoutPanel42.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel42.ColumnCount = 1;
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel42.Controls.Add(this.lbl_acilStopStateTime, 0, 0);
-            this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel42.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel42.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(817, 137);
-            this.tableLayoutPanel42.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel42.Name = "tableLayoutPanel42";
-            this.tableLayoutPanel42.RowCount = 1;
-            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel42.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel42.TabIndex = 2;
             // 
-            // tableLayoutPanel43
             // 
-            this.tableLayoutPanel43.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel43.ColumnCount = 1;
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.Controls.Add(this.lbl_pompa2TermikStateTime, 0, 0);
-            this.tableLayoutPanel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel43.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel43.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel43.Location = new System.Drawing.Point(817, 203);
-            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel43.Name = "tableLayoutPanel43";
-            this.tableLayoutPanel43.RowCount = 1;
-            this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel43.TabIndex = 2;
             // 
-            // tableLayoutPanel44
             // 
-            this.tableLayoutPanel44.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel44.ColumnCount = 1;
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.Controls.Add(this.lbl_pompa2TermikDesc, 0, 0);
-            this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel44.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel44.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel44.Location = new System.Drawing.Point(614, 203);
-            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
-            this.tableLayoutPanel44.RowCount = 1;
-            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel44.TabIndex = 2;
             // 
-            // tableLayoutPanel45
             // 
-            this.tableLayoutPanel45.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel45.ColumnCount = 1;
-            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel45.Controls.Add(this.lbl_pompa2TermikInstantValue, 0, 0);
-            this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel45.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel45.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel45.Location = new System.Drawing.Point(411, 203);
-            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel45.Name = "tableLayoutPanel45";
-            this.tableLayoutPanel45.RowCount = 1;
-            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel45.TabIndex = 2;
             // 
-            // tableLayoutPanel46
             // 
-            this.tableLayoutPanel46.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel46.ColumnCount = 1;
-            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel46.Controls.Add(this.lbl_pompa2TermikLastUpdate, 0, 0);
-            this.tableLayoutPanel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel46.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel46.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel46.Location = new System.Drawing.Point(208, 203);
-            this.tableLayoutPanel46.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel46.Name = "tableLayoutPanel46";
-            this.tableLayoutPanel46.RowCount = 1;
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel46.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel46.TabIndex = 2;
             // 
-            // tableLayoutPanel47
             // 
-            this.tableLayoutPanel47.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel47.ColumnCount = 1;
-            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel47.Controls.Add(this.label95, 0, 0);
-            this.tableLayoutPanel47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel47.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel47.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel47.Location = new System.Drawing.Point(5, 203);
-            this.tableLayoutPanel47.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel47.Name = "tableLayoutPanel47";
-            this.tableLayoutPanel47.RowCount = 1;
-            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel47.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel47.TabIndex = 2;
-            // 
-            // tableLayoutPanel48
-            // 
-            this.tableLayoutPanel48.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel48.ColumnCount = 1;
-            this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel48.Controls.Add(this.label96, 0, 0);
-            this.tableLayoutPanel48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel48.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel48.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel48.Location = new System.Drawing.Point(5, 269);
-            this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel48.Name = "tableLayoutPanel48";
-            this.tableLayoutPanel48.RowCount = 1;
-            this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel48.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel48.TabIndex = 2;
-            // 
-            // tableLayoutPanel49
-            // 
-            this.tableLayoutPanel49.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel49.ColumnCount = 1;
-            this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel49.Controls.Add(this.lbl_yikamaTankiLastUpdate, 0, 0);
-            this.tableLayoutPanel49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel49.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel49.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel49.Location = new System.Drawing.Point(208, 269);
-            this.tableLayoutPanel49.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel49.Name = "tableLayoutPanel49";
-            this.tableLayoutPanel49.RowCount = 1;
-            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel49.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel49.TabIndex = 2;
-            // 
-            // tableLayoutPanel50
-            // 
-            this.tableLayoutPanel50.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel50.ColumnCount = 1;
-            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel50.Controls.Add(this.lbl_yikamaTankiInstantValue, 0, 0);
-            this.tableLayoutPanel50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel50.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel50.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel50.Location = new System.Drawing.Point(411, 269);
-            this.tableLayoutPanel50.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel50.Name = "tableLayoutPanel50";
-            this.tableLayoutPanel50.RowCount = 1;
-            this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel50.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel50.TabIndex = 2;
-            // 
-            // tableLayoutPanel51
-            // 
-            this.tableLayoutPanel51.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel51.ColumnCount = 1;
-            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel51.Controls.Add(this.lbl_yikamaTankiDesc, 0, 0);
-            this.tableLayoutPanel51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel51.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel51.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel51.Location = new System.Drawing.Point(614, 269);
-            this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel51.Name = "tableLayoutPanel51";
-            this.tableLayoutPanel51.RowCount = 1;
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel51.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel51.TabIndex = 2;
-            // 
-            // tableLayoutPanel52
-            // 
-            this.tableLayoutPanel52.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel52.ColumnCount = 1;
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel52.Controls.Add(this.lbl_yikamaTankiStateTime, 0, 0);
-            this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel52.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel52.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel52.Location = new System.Drawing.Point(817, 269);
-            this.tableLayoutPanel52.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel52.Name = "tableLayoutPanel52";
-            this.tableLayoutPanel52.RowCount = 1;
-            this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel52.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel52.TabIndex = 2;
-            // 
-            // lbl_yikamaTankiStateTime
             // 
             this.lbl_yikamaTankiStateTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_yikamaTankiStateTime.AutoSize = true;
@@ -1501,11 +702,8 @@
             this.label120.AutoSize = true;
             this.label120.BackColor = System.Drawing.Color.Transparent;
             this.label120.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label120.Location = new System.Drawing.Point(76, 149);
             this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(164, 13);
             this.label120.TabIndex = 5;
-            this.label120.Text = "Bir Sonraki Haftalık Yıkamaya Kalan";
             // 
             // lbl_sonGunlukYikama
             // 
@@ -1876,6 +1074,7 @@
             this.tblLayP_yikamaBilgileri.Controls.Add(this.lbl_sonGunlukYikama, 0, 2);
             this.tblLayP_yikamaBilgileri.Controls.Add(this.lbl_birSonrakiGunlukYikama, 0, 4);
             this.tblLayP_yikamaBilgileri.Controls.Add(this.lbl_sonHaftalikYikama, 0, 6);
+            this.tblLayP_yikamaBilgileri.Controls.Add(this.label120, 0, 7);
             this.tblLayP_yikamaBilgileri.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
             this.tblLayP_yikamaBilgileri.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tblLayP_yikamaBilgileri.Location = new System.Drawing.Point(13, 358);
@@ -1902,25 +1101,7 @@
             this.timer_PlcConnect.Interval = 5000;
             this.timer_PlcConnect.Tick += new System.EventHandler(this.timer_PlcConnect_Tick);
             // 
-            // tableLayoutPanel27
             // 
-            this.tableLayoutPanel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
-            this.tableLayoutPanel27.ColumnCount = 1;
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel27.Controls.Add(this.tblLayP_istasyonBilgileri, 0, 0);
-            this.tableLayoutPanel27.Controls.Add(this.tblLayP_kabinDurumu, 0, 1);
-            this.tableLayoutPanel27.Controls.Add(this.tblLayP_yikamaBilgileri, 0, 2);
-            this.tableLayoutPanel27.Controls.Add(this.tblLayP_numuneCihazi, 0, 3);
-            this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(1066, 0);
-            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
-            this.tableLayoutPanel27.RowCount = 4;
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.57724F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.89973F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.89431F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.89973F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(344, 738);
-            this.tableLayoutPanel27.TabIndex = 3;
             // 
             // tblLayP_numuneCihazi
             // 
@@ -2844,226 +2025,7 @@
             // 
             // lbl_minAvgSicaklik
             // 
-            this.lbl_minAvgSicaklik.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_minAvgSicaklik.AutoSize = true;
-            this.lbl_minAvgSicaklik.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_minAvgSicaklik.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_minAvgSicaklik.Location = new System.Drawing.Point(94, 7);
-            this.lbl_minAvgSicaklik.Name = "lbl_minAvgSicaklik";
-            this.lbl_minAvgSicaklik.Size = new System.Drawing.Size(14, 19);
-            this.lbl_minAvgSicaklik.TabIndex = 0;
-            this.lbl_minAvgSicaklik.Text = "-";
             // 
-            // tableLayoutPanel19
-            // 
-            this.tableLayoutPanel19.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel19.ColumnCount = 1;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Controls.Add(this.instantSicaklikValue, 0, 0);
-            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel19.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(411, 203);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.RowCount = 1;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel19.TabIndex = 2;
-            // 
-            // instantSicaklikValue
-            // 
-            this.instantSicaklikValue.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instantSicaklikValue.AutoSize = true;
-            this.instantSicaklikValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.instantSicaklikValue.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.instantSicaklikValue.Location = new System.Drawing.Point(94, 7);
-            this.instantSicaklikValue.Name = "instantSicaklikValue";
-            this.instantSicaklikValue.Size = new System.Drawing.Size(14, 19);
-            this.instantSicaklikValue.TabIndex = 0;
-            this.instantSicaklikValue.Text = "-";
-            // 
-            // tableLayoutPanel20
-            // 
-            this.tableLayoutPanel20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel20.ColumnCount = 1;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel20.Controls.Add(this.sicaklikLastUpdate, 0, 0);
-            this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel20.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel20.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(208, 203);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 1;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel20.TabIndex = 2;
-            // 
-            // sicaklikLastUpdate
-            // 
-            this.sicaklikLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sicaklikLastUpdate.AutoSize = true;
-            this.sicaklikLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.sicaklikLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.sicaklikLastUpdate.Location = new System.Drawing.Point(96, 10);
-            this.sicaklikLastUpdate.Name = "sicaklikLastUpdate";
-            this.sicaklikLastUpdate.Size = new System.Drawing.Size(10, 13);
-            this.sicaklikLastUpdate.TabIndex = 0;
-            this.sicaklikLastUpdate.Text = "-";
-            // 
-            // tableLayoutPanel21
-            // 
-            this.tableLayoutPanel21.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel21.ColumnCount = 1;
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel21.Controls.Add(this.label15, 0, 0);
-            this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel21.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel21.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(5, 203);
-            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 1;
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel21.TabIndex = 2;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(71, 7);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 19);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Sıcaklık";
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel22.ColumnCount = 1;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel22.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(5, 269);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 1;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel22.TabIndex = 2;
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label17.Location = new System.Drawing.Point(69, 7);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 19);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Akış Hızı";
-            // 
-            // tableLayoutPanel23
-            // 
-            this.tableLayoutPanel23.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel23.ColumnCount = 1;
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel23.Controls.Add(this.akisHiziLastUpdate, 0, 0);
-            this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel23.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel23.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(208, 269);
-            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel23.Name = "tableLayoutPanel23";
-            this.tableLayoutPanel23.RowCount = 1;
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel23.TabIndex = 2;
-            // 
-            // akisHiziLastUpdate
-            // 
-            this.akisHiziLastUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.akisHiziLastUpdate.AutoSize = true;
-            this.akisHiziLastUpdate.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.akisHiziLastUpdate.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.akisHiziLastUpdate.Location = new System.Drawing.Point(96, 10);
-            this.akisHiziLastUpdate.Name = "akisHiziLastUpdate";
-            this.akisHiziLastUpdate.Size = new System.Drawing.Size(10, 13);
-            this.akisHiziLastUpdate.TabIndex = 1;
-            this.akisHiziLastUpdate.Text = "-";
-            // 
-            // tableLayoutPanel24
-            // 
-            this.tableLayoutPanel24.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel24.ColumnCount = 1;
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.Controls.Add(this.instantAkisHiziValue, 0, 0);
-            this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel24.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(411, 269);
-            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
-            this.tableLayoutPanel24.RowCount = 1;
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel24.TabIndex = 2;
-            // 
-            // instantAkisHiziValue
-            // 
-            this.instantAkisHiziValue.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instantAkisHiziValue.AutoSize = true;
-            this.instantAkisHiziValue.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.instantAkisHiziValue.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.instantAkisHiziValue.Location = new System.Drawing.Point(94, 7);
-            this.instantAkisHiziValue.Name = "instantAkisHiziValue";
-            this.instantAkisHiziValue.Size = new System.Drawing.Size(14, 19);
-            this.instantAkisHiziValue.TabIndex = 1;
-            this.instantAkisHiziValue.Text = "-";
-            // 
-            // tableLayoutPanel25
-            // 
-            this.tableLayoutPanel25.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel25.ColumnCount = 1;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.Controls.Add(this.lbl_minAvgAkisHizi, 0, 0);
-            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel25.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel25.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(614, 269);
-            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 1;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(203, 33);
-            this.tableLayoutPanel25.TabIndex = 2;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.09929F));
-            this.tableLayoutPanel1.Controls.Add(this.home_tableLayoutPanel_top, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.home_tableLayoutPanel_down, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold);
-            this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1066, 738);
-            this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lime;
             this.panel1.Location = new System.Drawing.Point(1023, 41);
@@ -3212,28 +2174,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1410, 738);
-            this.Controls.Add(this.tableLayoutPanel27);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Anasayfa";
             this.Text = "Anasayfa";
             this.Load += new System.EventHandler(this.Anasayfa_Load);
-            this.tableLayoutPanel34.ResumeLayout(false);
-            this.tableLayoutPanel34.PerformLayout();
-            this.tableLayoutPanel33.ResumeLayout(false);
-            this.tableLayoutPanel33.PerformLayout();
-            this.tableLayoutPanel32.ResumeLayout(false);
-            this.tableLayoutPanel32.PerformLayout();
-            this.tableLayoutPanel30.ResumeLayout(false);
-            this.tableLayoutPanel30.PerformLayout();
-            this.tableLayoutPanel29.ResumeLayout(false);
-            this.tableLayoutPanel29.PerformLayout();
-            this.tableLayoutPanel28.ResumeLayout(false);
-            this.tableLayoutPanel28.PerformLayout();
-            this.tableLayoutPanel31.ResumeLayout(false);
-            this.tableLayoutPanel31.PerformLayout();
-            this.tableLayoutPanel35.ResumeLayout(false);
-            this.tableLayoutPanel35.PerformLayout();
             this.home_tableLayoutPanel_down.ResumeLayout(false);
             this.home_tableLayoutPanel_down.PerformLayout();
             this.tableLayoutPanel36.ResumeLayout(false);
@@ -3276,62 +2220,8 @@
             this.tblLayP_istasyonBilgileri.PerformLayout();
             this.tblLayP_yikamaBilgileri.ResumeLayout(false);
             this.tblLayP_yikamaBilgileri.PerformLayout();
-            this.tableLayoutPanel27.ResumeLayout(false);
             this.tblLayP_numuneCihazi.ResumeLayout(false);
             this.tblLayP_numuneCihazi.PerformLayout();
-            this.tableLayoutPanel26.ResumeLayout(false);
-            this.tableLayoutPanel26.PerformLayout();
-            this.home_tableLayoutPanel_top.ResumeLayout(false);
-            this.home_tableLayoutPanel_top.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel14.ResumeLayout(false);
-            this.tableLayoutPanel14.PerformLayout();
-            this.tableLayoutPanel13.ResumeLayout(false);
-            this.tableLayoutPanel13.PerformLayout();
-            this.tableLayoutPanel12.ResumeLayout(false);
-            this.tableLayoutPanel12.PerformLayout();
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel10.PerformLayout();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel15.ResumeLayout(false);
-            this.tableLayoutPanel15.PerformLayout();
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel16.PerformLayout();
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel17.PerformLayout();
-            this.tableLayoutPanel18.ResumeLayout(false);
-            this.tableLayoutPanel18.PerformLayout();
-            this.tableLayoutPanel19.ResumeLayout(false);
-            this.tableLayoutPanel19.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
-            this.tableLayoutPanel21.ResumeLayout(false);
-            this.tableLayoutPanel21.PerformLayout();
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
-            this.tableLayoutPanel23.ResumeLayout(false);
-            this.tableLayoutPanel23.PerformLayout();
-            this.tableLayoutPanel24.ResumeLayout(false);
-            this.tableLayoutPanel24.PerformLayout();
-            this.tableLayoutPanel25.ResumeLayout(false);
-            this.tableLayoutPanel25.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3450,25 +2340,30 @@
         private System.Windows.Forms.Label label128;
         private System.Windows.Forms.TableLayoutPanel tblLayP_yikamaBilgileri;
         private System.Windows.Forms.Timer timer_PlcConnect;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel27;
         private System.Windows.Forms.TableLayoutPanel tblLayP_numuneCihazi;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel26;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label akmLastUpdate;
-        private System.Windows.Forms.Label instantAkmValue;
-        private System.Windows.Forms.Label lbl_minAvgAkm;
-        private System.Windows.Forms.Label lbl_hourAvgAkm;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label desarjDebiLastUpdate;
-        private System.Windows.Forms.Label iletkenlikLastUpdate;
         private System.Windows.Forms.Label phLastUpdate;
+        private System.Windows.Forms.Label desarjDebiLastUpdate;
+        private System.Windows.Forms.Label KOiLastUpdate;
         private System.Windows.Forms.Label debiLastUpdate;
+        private System.Windows.Forms.Label iletkenlikLastUpdate;
+        private System.Windows.Forms.Label akisHiziLastUpdate;
+        private System.Windows.Forms.Label oksijenLastUpdate;
+        private System.Windows.Forms.Label sicaklikLastUpdate;
+        private System.Windows.Forms.Label instantOksijenValue;
         private System.Windows.Forms.Label instantDebiValue;
+        private System.Windows.Forms.Label instantKOiValue;
+        private System.Windows.Forms.Label instantSicaklikValue;
         private System.Windows.Forms.Label instantPhValue;
         private System.Windows.Forms.Label instantIletkenlikValue;
+        private System.Windows.Forms.Label instantAkmValue;
+        private System.Windows.Forms.Label instantAkisHiziValue;
         private System.Windows.Forms.Label instantDesarjDebiValue;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.TableLayoutPanel home_tableLayoutPanel_top;
@@ -3499,11 +2394,22 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lbl_minAvgDesarjDebi;
         private System.Windows.Forms.Label lbl_minAvgIletkenlik;
+        private System.Windows.Forms.Label lbl_minAvgKOi;
         private System.Windows.Forms.Label lbl_minAvgPh;
         private System.Windows.Forms.Label lbl_minAvgDebi;
+        private System.Windows.Forms.Label lbl_minAvgAkm;
+        private System.Windows.Forms.Label lbl_minAvgOksijen;
+        private System.Windows.Forms.Label lbl_minAvgSicaklik;
+        private System.Windows.Forms.Label lbl_minAvgDesarjDebi;
+        private System.Windows.Forms.Label lbl_minAvgAkisHizi;
+        private System.Windows.Forms.Label lbl_hourAvgAkm;
+        private System.Windows.Forms.Label lbl_hourAvgOksijen;
         private System.Windows.Forms.Label lbl_hourAvgDebi;
+        private System.Windows.Forms.Label lbl_hourAvgKOi;
         private System.Windows.Forms.Label lbl_hourAvgPh;
+        private System.Windows.Forms.Label lbl_hourAvgSicaklik;
         private System.Windows.Forms.Label lbl_hourAvgIletkenlik;
+        private System.Windows.Forms.Label lbl_hourAvgAkisHizi;
         private System.Windows.Forms.Label lbl_hourAvgDesarjDebi;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.Label lbl_minAvgKOi;
@@ -3545,5 +2451,26 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TableLayoutPanel home_tableLayoutPanel_top;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.Label lbl_yikamaTankiLastUpdate;
+        private System.Windows.Forms.Label lbl_yikamaTankiInstantValue;
+        private System.Windows.Forms.Label lbl_yikamaTankiDesc;
+        private System.Windows.Forms.Label lbl_pompa2TermikLastUpdate;
+        private System.Windows.Forms.Label lbl_pompa2TermikInstantValue;
+        private System.Windows.Forms.Label lbl_pompa2TermikDesc;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label lbl_acilStopLastUpdate;
+        private System.Windows.Forms.Label lbl_acilStopInstantValue;
+        private System.Windows.Forms.Label lbl_acilStopDesc;
+        private System.Windows.Forms.Label lbl_dumanDesc;
+        private System.Windows.Forms.Label lbl_dumanInstantValue;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label lbl_dumanLastUpdate;
     }
 }
