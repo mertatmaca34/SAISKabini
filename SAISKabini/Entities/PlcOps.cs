@@ -3,24 +3,23 @@ using System;
 
 namespace SAISKabini
 {
-    internal class PlcOps
+    public class PlcOps
     {
         static readonly S7Client client = new S7Client(); //PLC Nesnesi Oluşturma
-        private static readonly int v = client.ConnectTo("10.33.3.253", 0, 1);
-        private int plcResult = v; //Oluşturulan nesneye PLC IP'sinin bağlanması
+        private int PlcResult = client.ConnectTo("10.33.3.253", 0, 1); //Oluşturulan nesneye PLC IP'sinin bağlanması
 
 
         //Değişkenler
-        private byte[] db41Buffer = new byte[148];
+        byte[] db41Buffer = new byte[148];
 
-        private byte[] db4Buffer = new byte[30];
+        byte[] db4Buffer = new byte[30];
 
-        private byte[] db1Buffer = new byte[30];
+        byte[] db1Buffer = new byte[30];
 
-        private byte[] MBBuffer = new byte[2000];
+        byte[] mb1Buffer = new byte[300];
 
+        byte[] MBBuffer = new byte[2000];
 
-        public int PlcResult { get; set; }
 
         //DB41
         public double AkmValue { get; set; }
@@ -51,6 +50,15 @@ namespace SAISKabini
         public bool Pompa2Value { get; set; }
 
 
+        //BİT STATS DEĞERLERİ
+        public bool YikamaStat { get; set; }
+        public bool HaftalikYikamaStat { get; set; }
+
+        public bool AutoStat { get; set; }
+        public bool BakimStat { get; set; }
+        public bool KalibrasyonStat { get; set; }
+
+
         //MB36 DENEME
         public bool[] MB36 = new bool[8];
         public bool[] MB19 = new bool[8];
@@ -69,29 +77,37 @@ namespace SAISKabini
 
         public int GetStatus() //Anlık Kabin Çalışma Durumu (Oto mod, Yıkama vb)
         {
+            SetStatusValues();
 
-
-
-
-
-
-
-            int status = yikama == true ? 23
-            : haftalikYikama == true ? 24
-            : auto == true ? 1
-            : bakim == true ? 25
-            : kalibrasyon == true ? 9
+            int status = YikamaStat == true ? 23
+            : HaftalikYikamaStat == true ? 24
+            : AutoStat == true ? 1
+            : BakimStat == true ? 25
+            : KalibrasyonStat == true ? 9
             : 0;
 
 
             return status;
         }
 
+        public void SetStatusValues()
+        {
+            PlcResult = client.MBRead(0, mb1Buffer.Length, mb1Buffer);
+
+            YikamaStat = S7.GetBitAt(mb1Buffer, 24, 1);
+
+            HaftalikYikamaStat = S7.GetBitAt(mb1Buffer, 24, 2);
+
+            AutoStat = S7.GetBitAt(mb1Buffer, 10, 6);
+
+            BakimStat = S7.GetBitAt(mb1Buffer, 10, 4);
+
+            KalibrasyonStat = S7.GetBitAt(mb1Buffer, 10, 5);
+        }
 
         public void SetRealValues()
         {
             PlcResult = client.DBRead(41, 0, db41Buffer.Length, db41Buffer);
-
 
             AkmValue = Math.Round(S7.GetRealAt(db41Buffer, 36), 2);
 
@@ -121,6 +137,8 @@ namespace SAISKabini
 
         public void SetBitValues()
         {
+            PlcResult = client.EBRead(0, db1Buffer.Length, db1Buffer);
+
             KapiValue = S7.GetBitAt(db1Buffer, 25, 5);
 
             DumanValue = S7.GetBitAt(db1Buffer, 1, 1);

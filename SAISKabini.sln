@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAISKabini", "SAISKabini\SAISKabini.csproj", "{B81925FB-F6F5-4189-8018-56FAA54E64FA}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ISKY", "ISKY\ISKY.vdproj", "{B863C100-ECE3-4DBD-82B9-6A2A5FBD7AFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{B81925FB-F6F5-4189-8018-56FAA54E64FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B81925FB-F6F5-4189-8018-56FAA54E64FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B81925FB-F6F5-4189-8018-56FAA54E64FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B863C100-ECE3-4DBD-82B9-6A2A5FBD7AFB}.Debug|Any CPU.ActiveCfg = Debug
+		{B863C100-ECE3-4DBD-82B9-6A2A5FBD7AFB}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

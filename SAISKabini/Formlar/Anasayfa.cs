@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using Sharp7;
+using System;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Globalization;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -13,7 +13,6 @@ namespace SAISKabini
 {
     public partial class Anasayfa : Form
     {
-        private protected ServicesModel Services { get; set; }
 
         readonly UserInfo userInfo = new UserInfo();
 
@@ -24,6 +23,32 @@ namespace SAISKabini
         readonly static string pcName = Environment.MachineName;
 
         readonly SqlConnection sqlConnection = new SqlConnection("Data Source=" + pcName + "\\SQLEXPRESS;Initial Catalog=SAISKabini;Integrated Security=True");
+
+        private protected ServicesModel Services { get; set; }
+
+        readonly UserInfo userInfo = new UserInfo();
+
+        DeserializeResult deserializeResult = new DeserializeResult();
+
+        readonly FormStyles formStyles = new FormStyles();
+
+        readonly SqlSave sqlSave = new SqlSave();
+
+        static readonly S7Client client = new S7Client(); //PLC Nesnesi Oluşturma
+
+        private int PlcResult = client.ConnectTo("10.33.3.253", 0, 1);
+
+
+        byte[] db41Buffer = new byte[148];
+
+        byte[] db4Buffer = new byte[30];
+
+        byte[] db1Buffer = new byte[30];
+
+        byte[] mb1Buffer = new byte[300];
+
+        byte[] MBBuffer = new byte[2000];
+
 
         #region Yuvarlak Köşe DLL eklentisi
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -46,57 +71,166 @@ namespace SAISKabini
 
         public double minAvgAkm, minAvgOksijen, minAvgDebi, minAvgKOi, minAvgPh, minAvgSicaklik, minAvgIletkenlilk, minAvgAkisHizi, minAvgDesarjDebi;
 
+
         public double hourAvgAkm, hourAvgOksijen, hourAvgDebi, hourAvgKOi, hourAvgPh, hourAvgSicaklik, hourAvgIletkenlilk, hourAvgAkisHizi, hourAvgDesarjDebi;
+
+        public string softwareVersion = "1.0.0";
 
         #endregion
 
+
+        private void timer_GitmeyenVeriGonder_Tick(object sender, EventArgs e)
+        {
+            var bgw = new BackgroundWorker();
+            bgw.DoWork += delegate
+            {
+                try
+                {
+                    sqlConnection.Open();
+
+                    SqlCommand sqlCommand = new SqlCommand("spGitmeyenVeriGetir", sqlConnection)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
+
+
+                    SqlDataReader reader = sqlCommand.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        DateTime ReadTime = (DateTime)reader["ReadTime"];
+                        Guid Stationid = new Guid(reader["Stationid"].ToString());
+                        string SoftwareVersion = reader["SoftwareVersion"].ToString();
+                        int Period = (int)reader["Period"];
+                        double AkisHizi = Convert.ToDouble(reader["AkisHizi"]);
+                        int AkisHizi_Status = (int)reader["Status"];
+                        double AKM = Convert.ToDouble(reader["AKM"]);
+                        int AKM_Status = (int)reader["Status"];
+                        double CozunmusOksijen = Convert.ToDouble(reader["CozunmusOksijen"]);
+                        int CozunmusOksijen_Status = (int)reader["Status"];
+                        double Debi = Convert.ToDouble(reader["Debi"]);
+                        int Debi_Status = (int)reader["Status"];
+                        double DesarjDebi = Convert.ToDouble(reader["Debi"]);
+                        int DesarjDebi_Status = (int)reader["Status"];
+                        double KOi = Convert.ToDouble(reader["KOi"]);
+                        int KOi_Status = (int)reader["Status"];
+                        double pH = Convert.ToDouble(reader["pH"]);
+                        int pH_Status = (int)reader["Status"];
+                        double Sicaklik = Convert.ToDouble(reader["Sicaklik"]);
+                        int Sicaklik_Status = (int)reader["Status"];
+                        double Iletkenlik = Convert.ToDouble(reader["Iletkenlik"]);
+                        int Iletkenlik_Status = (int)reader["Status"];
+
+                        ServicePointManager.Expect100Continue = true;
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11;
+
+                        var data = new SendData
+                        {
+                            Readtime = ReadTime,
+                            Stationid = Stationid,
+                            SoftwareVersion = SoftwareVersion,
+                            Period = Period,
+                            AkisHizi = AkisHizi,
+                            AkisHizi_Status = AkisHizi_Status,
+                            AKM = AKM,
+                            AKM_Status = AKM_Status,
+                            CozunmusOksijen = CozunmusOksijen,
+                            CozunmusOksijen_Status = CozunmusOksijen_Status,
+                            Debi = Debi,
+                            Debi_Status = Debi_Status,
+                            DesarjDebi = DesarjDebi,
+                            DesarjDebi_Status = DesarjDebi_Status,
+                            KOi = KOi,
+                            KOi_Status = KOi_Status,
+                            pH = pH,
+                            pH_Status = pH_Status,
+                            Sicaklik = Sicaklik,
+                            Sicaklik_Status = Sicaklik_Status,
+                            Iletkenlik = Iletkenlik,
+                            Iletkenlik_Status = Iletkenlik_Status,
+                        };
+
+                        Services.Login(userInfo.UserName, userInfo.Password);
+
+                        var res = Services.sendData(data);
+                    }
+                    sqlConnection.Close();
+                }
+                catch (Exception)
+                {
+                }
+
+            };
+            bgw.RunWorkerAsync();
+        }
+
         private void Anasayfa_Load(object sender, EventArgs e)
         {
+            #region Bilgilerin Veritabanından Getirilmesi
+
             foreach (Control item in Right_TLP.Controls)
             {
+                if (item is TableLayoutPanel)
                 {
+                    (item as TableLayoutPanel).CellPaint += new TableLayoutCellPaintEventHandler(formStyles.CellPaints);
                 }
             }
 
+            foreach (Control item in Main_TLP.Controls)
             {
+                if (item is TableLayoutPanel)
                 {
+                    (item as TableLayoutPanel).CellPaint += new TableLayoutCellPaintEventHandler(formStyles.CellPaints);
+                }
+            }
 
+            #endregion
 
-
-            {
-                    CommandType = CommandType.StoredProcedure
-                };
-
-
-
+            #region Bilgilerin Veritabanından Getirilmesi
 
                     lbl_birSonrakiHaftalikYikama.Text = kalanSure.ToString("c");
                 }
 
+            bgw_formYukle.DoWork += delegate
+            {
 
                 while (reader.Read())
                 {
                     DateTime tetikTarih = (DateTime)reader["BaslamaTarihi"];
                     lbl_numuneTetikveTarih.Text = reader["Tetik"] + ": " + reader["Değer"] + " - " + tetikTarih.ToString("hh:mm:ss");
 
+                stationInfo = (StationInfo)sqlSave.IstasyonBilgiGetir();
+
+                lbl_istasyonAdi.Text = stationInfo.istasyonAdi;
+                lbl_istasyonIp.Text = stationInfo.istasyonIp;
+                lbl_simId.Text = stationInfo.simId;
+                userInfo.UserName = stationInfo.kullaniciAdi;
+                userInfo.Password = stationInfo.kullaniciSifresi;
+
+                DateTime tetikTarih = sampleInfo.baslamaTarihi;
+                lbl_numuneTetikveTarih.Text = sampleInfo.tetik + ": " + sampleInfo.deger + " - " + tetikTarih.ToString("hh:mm:ss");
+
+                //Yıkama Bilgileri
+                lbl_sonGunlukYikama.Text = sqlSave.GunlukYikamaGetir();
+                lbl_sonHaftalikYikama.Text = sqlSave.HaftalikYikamaGetir();
+
+
                 //Numune Bilgileri
                 SampleInfo sampleInfo = new SampleInfo();
 
+                sampleInfo = (SampleInfo)sqlSave.NumuneBilgiGetir();
 
                 DateTime tetikTarih = sampleInfo.baslamaTarihi;
                 lbl_numuneTetikveTarih.Text = sampleInfo.tetik + ": " + sampleInfo.deger + " - " + tetikTarih.ToString("hh:mm:ss");
 
                 DateTime numuneAlmaBitisTarihi = sampleInfo.bitisTarihi;
                 lbl_numuneAlmaBitis.Text = numuneAlmaBitisTarihi.ToString("hh:mm:ss");
+                lbl_dolapSicakligi.Text = sampleInfo.dolapSicakligi + "°C";
             };
 
             bgw_formYukle.RunWorkerAsync();
+            #endregion
         }
-
-        public string softwareVersion = "1.0.0";
-
-
-        #endregion
 
         public Anasayfa()
         {
@@ -121,6 +255,20 @@ namespace SAISKabini
 
             stats = new int[60 / intervalTime];
 
+            this.Services = new ServicesModel("https://entegrationsais.csb.gov.tr/", StationType.SAIS);
+        }
+
+
+        private void tblLayP_yikamaBilgileri_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if (e.Row % 2 == 0)
+            {
+                e.Graphics.FillRectangle(Brushes.WhiteSmoke, e.CellBounds);
+            }
+            else if (e.Row % 2 == 1)
+            {
+                e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
+            }
         }
 
         private void tblLayP_numuneCihazi_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
@@ -135,8 +283,12 @@ namespace SAISKabini
             }
         }
 
+        private void tblLayP_kabinDurumu_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
-        }
+            if (e.Row % 2 == 0)
+            {
+                e.Graphics.FillRectangle(Brushes.WhiteSmoke, e.CellBounds);
+            }
             else if (e.Row % 2 == 1)
             {
                 e.Graphics.FillRectangle(Brushes.White, e.CellBounds);
@@ -198,88 +350,243 @@ namespace SAISKabini
                 Iletkenlik_Status = status
             };
 
+            Services.Login(userInfo.UserName, userInfo.Password);
 
+            var res = Services.sendData(data);
 
+            if (res.result)
+            {
+                deserializeResult = JsonConvert.DeserializeObject<DeserializeResult>(res.objects.ToString());
+
+                sqlSave.DonenVeriKaydet(deserializeResult);
+
+                sqlSave.SendDataSave(data);
+            }
+            else
+            {
+                sqlSave.NotSendDataSave(data);
+                //log eklenecek
+            }
+            #endregion
         }
 
 
 
-        private void timer_PlcConnect_Tick(object sender, EventArgs e)
+        private void Timer_PlcConnect_Tick(object sender, EventArgs e)
         {
             var bgw_FormYukle = new BackgroundWorker();
             bgw_FormYukle.DoWork += delegate
             {
-                plc.SetRealValues();
+                PlcResult = client.DBRead(41, 0, db41Buffer.Length, db41Buffer);
 
-                //Çekilen real değerlerin controllere atanması
+                double AkmValue = Math.Round(S7.GetRealAt(db41Buffer, 36), 2);
 
-                instantAkmValue.Text = plc.AkmValue.ToString() + " mg/l";
+                double OksijenValue = Math.Round(S7.GetRealAt(db41Buffer, 24), 2);
 
-                instantOksijenValue.Text = plc.OksijenValue.ToString() + " mg/l";
+                double DebiValue = Math.Round(S7.GetRealAt(db41Buffer, 0), 2);
 
-                instantDebiValue.Text = plc.DebiValue.ToString() + " m³/d";
+                double KoiValue = Math.Round(S7.GetRealAt(db41Buffer, 32), 2);
 
-                instantKOiValue.Text = plc.KoiValue.ToString() + " mg/l";
+                double PhValue = Math.Round(S7.GetRealAt(db41Buffer, 16), 2);
 
-                instantPhValue.Text = plc.PhValue.ToString();
+                double SicaklikValue = Math.Round(S7.GetRealAt(db41Buffer, 28), 2);
 
-                instantSicaklikValue.Text = plc.SicaklikValue.ToString() + "°C";
+                double NemValue = Math.Round(S7.GetRealAt(db41Buffer, 44), 2);
+
+                double IletkenlikValue = Math.Round(S7.GetRealAt(db41Buffer, 20), 2);
+
+                double AkisHiziValue = Math.Round(S7.GetRealAt(db41Buffer, 4), 2);
+
+                double DesarjDebiValue = Math.Round(S7.GetRealAt(db41Buffer, 12), 2);
+
+                double Pompa1Hz = Math.Round(S7.GetRealAt(db41Buffer, 140), 2);
+
+                double Pompa2Hz = Math.Round(S7.GetRealAt(db41Buffer, 144), 2);
+
+                double NumuneSicaklik = Math.Round(S7.GetRealAt(db41Buffer, 80), 2);
+
+                double NumuneNem = Math.Round(S7.GetRealAt(db41Buffer, 84), 2);
+
+                PlcResult = client.EBRead(0, db1Buffer.Length, db1Buffer);
+
+                bool KapiValue = S7.GetBitAt(db1Buffer, 25, 5);
+
+                bool DumanValue = S7.GetBitAt(db1Buffer, 1, 1);
+
+                bool SuBaskiniValue = S7.GetBitAt(db1Buffer, 0, 7);
+
+                bool AcilStopValue = S7.GetBitAt(db1Buffer, 25, 7);
+
+                bool Pompa1TermikValue = S7.GetBitAt(db1Buffer, 27, 5);
+
+                bool Pompa2TermikValue = S7.GetBitAt(db1Buffer, 28, 0);
+
+                bool TemizSuTermikValue = S7.GetBitAt(db1Buffer, 28, 2);
+
+                bool YikamaTankiValue = S7.GetBitAt(db1Buffer, 28, 3);
+
+                bool EnerjiValue = S7.GetBitAt(db1Buffer, 25, 6);
+
+                bool Pompa1CalisiyorMu = S7.GetBitAt(db1Buffer, 27, 4);
+
+                bool Pompa2CalisiyorMu = S7.GetBitAt(db1Buffer, 27, 7);
+
+                PlcResult = client.MBRead(0, mb1Buffer.Length, mb1Buffer);
+
+                bool YikamaStat = S7.GetBitAt(mb1Buffer, 24, 1);
+
+                bool HaftalikYikamaStat = S7.GetBitAt(mb1Buffer, 24, 2);
+
+                bool AutoStat = S7.GetBitAt(mb1Buffer, 10, 6);
+
+                bool BakimStat = S7.GetBitAt(mb1Buffer, 10, 4);
+
+                bool KalibrasyonStat = S7.GetBitAt(mb1Buffer, 10, 5);
+
+                int status = YikamaStat == true ? 23
+                : HaftalikYikamaStat == true ? 24
+                : AutoStat == true ? 1
+                : BakimStat == true ? 25
+                : KalibrasyonStat == true ? 9
+                : 0;
+
+                PlcResult = client.DBRead(4, 0, db4Buffer.Length, db4Buffer);
+
+                DateTime time = S7.GetDTLAt(db4Buffer, 0);
+
+                /*ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11;
+                */
+                VeriGonder(time, lbl_simId.Text, softwareVersion, 1, AkisHiziValue, status, AkmValue, OksijenValue,
+                    DebiValue, DebiValue, KoiValue, PhValue, SicaklikValue, IletkenlikValue);
 
                 lbl_sicaklik.Text = plc.SicaklikValue.ToString() + "°C";
 
-                lbl_nem.Text = "%" + plc.NemValue.ToString();
+                //Çekilen real değerlerin controllere atanması
 
-                instantIletkenlikValue.Text = plc.IletkenlikValue.ToString() + " mS/cm";
+                instantAkmValue.Text = AkmValue.ToString() + " mg/l";
 
-                instantAkisHiziValue.Text = plc.AkisHiziValue.ToString() + " m/s";
+                instantOksijenValue.Text = OksijenValue.ToString() + " mg/l";
 
-                instantDesarjDebiValue.Text = plc.DesarjDebiValue.ToString() + " m³/d";
+                instantDebiValue.Text = DebiValue.ToString() + " m³/d";
 
+                instantKOiValue.Text = KoiValue.ToString() + " mg/l";
+
+                instantPhValue.Text = PhValue.ToString();
+
+                instantSicaklikValue.Text = SicaklikValue.ToString() + "°C";
+
+                lbl_sicaklik.Text = SicaklikValue.ToString() + "°C";
+
+                lbl_nem.Text = "%" + NemValue.ToString();
+
+                instantIletkenlikValue.Text = IletkenlikValue.ToString() + " mS/cm";
+
+                instantAkisHiziValue.Text = AkisHiziValue.ToString() + " m/s";
+
+                instantDesarjDebiValue.Text = DesarjDebiValue.ToString() + " m³/d";
+
+                //1 Dakikalik Tüm Verilerin Veritabanına Kaydı
+
+                AllData alldata = new AllData();
+
+                alldata.Readtime = time;
+                alldata.Stationid = new Guid(lbl_simId.Text);
+                alldata.SoftwareVersion = "1.0.0";
+                alldata.Period = 1;
+                alldata.AKM = AkmValue;
+                alldata.AkisHizi = AkisHiziValue;
+                alldata.CozunmusOksijen = OksijenValue;
+                alldata.Debi = DebiValue;
+                alldata.KOi = KoiValue;
+                alldata.pH = PhValue;
+                alldata.Sicaklik = SicaklikValue;
+                alldata.Iletkenlik = IletkenlikValue;
+                alldata.NumuneNem = NemValue;
+                alldata.NumuneSicaklik = SicaklikValue;
+                alldata.Pompa1Hz = Pompa1Hz;
+                alldata.Pompa2Hz = Pompa2Hz;
+                alldata.Status = status;
+
+                sqlSave.TumDataKaydet(alldata);
+
+                //1 Dakikalik Tüm Verilerin Veritabanına Kaydı
+
+
+                BitVeriler bitVeriler = new BitVeriler();
+
+                DeserializeResult deserializeResult = new DeserializeResult();
+                deserializeResult.AKM_N_Status = sqlSave.DonenVeriGetir();
+
+                if (deserializeResult.AKM_N_Status == 1)
+                {
+                    bitVeriler.VeriDurumu = true;
+                }
+                else
+                {
+                    bitVeriler.VeriDurumu = false;
+                }
+
+                bitVeriler.Readtime = time;
+                bitVeriler.Kapi = KapiValue;
+                bitVeriler.Duman = DumanValue;
+                bitVeriler.SuBaskini = SuBaskiniValue;
+                bitVeriler.AcilStop = AcilStopValue;
+                bitVeriler.Pompa1Termik = Pompa1TermikValue;
+                bitVeriler.Pompa2Termik = Pompa2TermikValue;
+                bitVeriler.TemizSuPompaTermik = TemizSuTermikValue;
+                bitVeriler.YikamaTanki = YikamaTankiValue;
+                bitVeriler.Enerji = EnerjiValue;
+                bitVeriler.AutoStat = AutoStat;
+                bitVeriler.YikamaStat = YikamaStat;
+                bitVeriler.HaftalikYikamaStat = HaftalikYikamaStat;
+                bitVeriler.KalibrasyonStat = KalibrasyonStat;
+                bitVeriler.BakimStat = BakimStat;
+                bitVeriler.Pompa1CalisiyorMu = Pompa1CalisiyorMu;
+                bitVeriler.Pompa2CalisiyorMu = Pompa2CalisiyorMu;
+
+                sqlSave.BitVerilerKaydet(bitVeriler);
 
                 //Çekilen bit değerlerin controllere atanması
 
                 #region Bit Değerler
-                plc.SetBitValues();
 
-                lbl_kapiInstantValue.Text = plc.KapiValue == true ? "Açık" : "Kapalı";
-                lbl_kapiDesc.Text = plc.KapiValue == true ? "Kapı Açık" : "Kapı Kapalı";
+                lbl_kapiInstantValue.Text = KapiValue == true ? "Açık" : "Kapalı";
+                lbl_kapiDesc.Text = KapiValue == true ? "Kapı Açık" : "Kapı Kapalı";
 
-                lbl_dumanInstantValue.Text = plc.DumanValue == true ? "Var" : "Yok";
-                lbl_dumanDesc.Text = plc.DumanValue == true ? "İçeride duman var" : "İçeride duman yok";
+                lbl_dumanInstantValue.Text = DumanValue == true ? "Var" : "Yok";
+                lbl_dumanDesc.Text = DumanValue == true ? "İçeride duman var" : "İçeride duman yok";
 
-                lbl_suBaskiniInstantValue.Text = plc.SuBaskiniValue == true ? "Var" : "Yok";
-                lbl_suBaskiniDesc.Text = plc.SuBaskiniValue == true ? "Su Baskını Var" : "Su Baskını Yok";
+                lbl_suBaskiniInstantValue.Text = SuBaskiniValue == true ? "Var" : "Yok";
+                lbl_suBaskiniDesc.Text = SuBaskiniValue == true ? "Su Baskını Var" : "Su Baskını Yok";
 
-                lbl_acilStopInstantValue.Text = plc.AcilStopValue == true ? "Var" : "Yok";
-                lbl_acilStopDesc.Text = plc.AcilStopValue == true ? "Acil stopa basıldı" : "Acil stopa basılmadı";
+                lbl_acilStopInstantValue.Text = AcilStopValue == true ? "Var" : "Yok";
+                lbl_acilStopDesc.Text = AcilStopValue == true ? "Acil stopa basıldı" : "Acil stopa basılmadı";
 
-                lbl_pompa1TermikInstantValue.Text = plc.Pompa1TermikValue == true ? "Termik" : "Yok";
-                lbl_pompa1TermikDesc.Text = plc.Pompa1TermikValue == true ? "Termik attı" : "Termik yok";
+                lbl_pompa1TermikInstantValue.Text = Pompa1TermikValue == true ? "Termik" : "Yok";
+                lbl_pompa1TermikDesc.Text = Pompa1TermikValue == true ? "Termik attı" : "Termik yok";
 
-                lbl_pompa2TermikInstantValue.Text = plc.Pompa2TermikValue == true ? "Termik" : "Yok";
-                lbl_pompa2TermikDesc.Text = plc.Pompa2TermikValue == true ? "Termik attı" : "Termik yok";
+                lbl_pompa2TermikInstantValue.Text = Pompa2TermikValue == true ? "Termik" : "Yok";
+                lbl_pompa2TermikDesc.Text = Pompa2TermikValue == true ? "Termik attı" : "Termik yok";
 
-                lbl_temizSuTermikInstantValue.Text = plc.TemizSuTermikValue == true ? "Termik" : "Yok";
-                lbl_temizSuTermikDesc.Text = plc.TemizSuTermikValue == true ? "Termik Attı" : "Termik yok";
+                lbl_temizSuTermikInstantValue.Text = TemizSuTermikValue == true ? "Termik" : "Yok";
+                lbl_temizSuTermikDesc.Text = TemizSuTermikValue == true ? "Termik Attı" : "Termik yok";
 
-                lbl_yikamaTankiInstantValue.Text = plc.YikamaTankiValue == true ? "Boş" : "Dolu";
-                lbl_yikamaTankiDesc.Text = plc.YikamaTankiValue == true ? "Yıkama tankı boş" : "Yıkama tankı dolu";
+                lbl_yikamaTankiInstantValue.Text = YikamaTankiValue == true ? "Boş" : "Dolu";
+                lbl_yikamaTankiDesc.Text = YikamaTankiValue == true ? "Yıkama tankı boş" : "Yıkama tankı dolu";
 
-                lbl_enerjiInstantValue.Text = plc.EnerjiValue == true ? "Yok" : "Var";
-                lbl_enerjiDesc.Text = plc.EnerjiValue == true ? "Enerji yok" : "Enerji var";
-
-
-
+                lbl_enerjiInstantValue.Text = EnerjiValue == true ? "Yok" : "Var";
+                lbl_enerjiDesc.Text = EnerjiValue == true ? "Enerji yok" : "Enerji var";
 
                 #region Kabin Durumları Değerleri
 
-                if (plc.Pompa1Hz != 0)
+                if (Pompa1Hz != 0)
                 {
-                    lbl_pompaDurum.Text = "Pompa 1 - " + plc.Pompa1Hz + "Hz";
+                    lbl_pompaDurum.Text = "Pompa 1 - " + Pompa1Hz + "Hz";
                 }
-                else if (plc.Pompa2Hz != 0)
+                else if (Pompa2Hz != 0)
                 {
-                    lbl_pompaDurum.Text = "Pompa 2 - " + plc.Pompa2Hz + "Hz";
+                    lbl_pompaDurum.Text = "Pompa 2 - " + Pompa2Hz + "Hz";
                 }
                 else
                 {
@@ -292,188 +599,99 @@ namespace SAISKabini
 
                 #region Güncelleme Tarihlerinin Güncellenmesi
 
-                if (plc.Connected())
-                {
-                    //Üst Panel (Real Değerler)
 
-                    akmLastUpdate.Text = DateTime.Now.ToString();
-                    oksijenLastUpdate.Text = DateTime.Now.ToString();
-                    debiLastUpdate.Text = DateTime.Now.ToString();
-                    KOiLastUpdate.Text = DateTime.Now.ToString();
-                    phLastUpdate.Text = DateTime.Now.ToString();
-                    sicaklikLastUpdate.Text = DateTime.Now.ToString();
-                    iletkenlikLastUpdate.Text = DateTime.Now.ToString();
-                    akisHiziLastUpdate.Text = DateTime.Now.ToString();
-                    desarjDebiLastUpdate.Text = DateTime.Now.ToString();
+                //Üst Panel (Real Değerler)
 
-                    // Alt Panel (Bit Değerler)
+                akmLastUpdate.Text = time.ToString();
+                oksijenLastUpdate.Text = time.ToString();
+                debiLastUpdate.Text = time.ToString();
+                KOiLastUpdate.Text = time.ToString();
+                phLastUpdate.Text = time.ToString();
+                sicaklikLastUpdate.Text = time.ToString();
+                iletkenlikLastUpdate.Text = time.ToString();
+                akisHiziLastUpdate.Text = time.ToString();
+                desarjDebiLastUpdate.Text = time.ToString();
 
-                    lbl_kapiLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_dumanLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_suBaskiniLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_acilStopLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_pompa1TermikLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_pompa2TermikLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_TemizSuTermikLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_yikamaTankiLastUpdate.Text = DateTime.Now.ToString();
-                    lbl_enerjiLastUpdate.Text = DateTime.Now.ToString();
-                }
-                else
-                {
-                    //Loglara yazılacak
-                }
+                // Alt Panel (Bit Değerler)
+
+                lbl_kapiLastUpdate.Text = time.ToString();
+                lbl_dumanLastUpdate.Text = time.ToString();
+                lbl_suBaskiniLastUpdate.Text = time.ToString();
+                lbl_acilStopLastUpdate.Text = time.ToString();
+                lbl_pompa1TermikLastUpdate.Text = time.ToString();
+                lbl_pompa2TermikLastUpdate.Text = time.ToString();
+                lbl_TemizSuTermikLastUpdate.Text = time.ToString();
+                lbl_yikamaTankiLastUpdate.Text = time.ToString();
+                lbl_enerjiLastUpdate.Text = time.ToString();
 
                 #endregion
 
-                #region Dakikalık Değerlerin Ekrana Yansıtılması ve Hesabı
+                //Son Gönderilen 5 verinin ortalamasının ekrana gösterimi
+                sqlSave.OrtalamaSon5Dakika(lbl_minAvgAkm, lbl_minAvgOksijen, lbl_minAvgSicaklik, lbl_minAvgPh, lbl_minAvgIletkenlik, lbl_minAvgKOi, lbl_minAvgDebi, lbl_minAvgDesarjDebi, lbl_minAvgAkisHizi);
 
-                //Dakikalık Ortalamanın Hesaplanması
-
-                //PLC Tetiğine Göre Dakikada Tekrar Sayı Hesabı
-
-
-                //Saniye 59 dan düşük olduğu sürece yapılan hesap
-                if (loopCountAvgMin < 60 / intervalTime)
-                {
-                    lbl_kapiStateTime.Text = loopCountAvgMin.ToString();
-                    minAvgAkm += plc.AkmValue;
-                    minAvgOksijen += plc.OksijenValue;
-                    minAvgDebi += plc.DebiValue;
-                    minAvgKOi += plc.KoiValue;
-                    minAvgPh += plc.PhValue;
-                    minAvgSicaklik += plc.SicaklikValue;
-                    minAvgIletkenlilk += plc.IletkenlikValue;
-                    minAvgAkisHizi += plc.AkisHiziValue;
-                    minAvgDesarjDebi += plc.DesarjDebiValue;
-
-                    #region stats Hesabı
-
-                    stats[loopCountAvgMin] = plc.GetStatus();
-
-                    #endregion
-
-                    loopCountAvgMin++;
-
-                    lbl_minAvgAkm.Text = Math.Round(minAvgAkm / loopCountAvgMin, 2).ToString() + " mg/l";
-                    lbl_minAvgOksijen.Text = Math.Round(minAvgOksijen / loopCountAvgMin, 2).ToString() + " mg/l";
-                    lbl_minAvgDebi.Text = Math.Round(minAvgDebi / loopCountAvgMin, 2).ToString() + " m³/d";
-                    lbl_minAvgKOi.Text = Math.Round(minAvgKOi / loopCountAvgMin, 2).ToString() + " mg/l";
-                    lbl_minAvgPh.Text = Math.Round(minAvgPh / loopCountAvgMin, 2).ToString();
-                    lbl_minAvgSicaklik.Text = Math.Round(minAvgSicaklik / loopCountAvgMin, 2).ToString() + "°C";
-                    lbl_minAvgIletkenlik.Text = Math.Round(minAvgIletkenlilk / loopCountAvgMin, 2).ToString() + " mS/cm";
-                    lbl_minAvgAkisHizi.Text = Math.Round(minAvgAkisHizi / loopCountAvgMin, 2).ToString() + " m/s";
-                    lbl_minAvgDesarjDebi.Text = Math.Round(minAvgDesarjDebi / loopCountAvgMin, 2).ToString() + " m³/d";
-                }
-
-                //Yeni Dakika Değerleri ve Saatlik Ortalama Atamaları
-
-                else if (loopCountAvgMin == 60 / intervalTime)
-                {
-                    if (loopCountAvgHour < 60)
-                    {
-                        if (loopCountAvgHour == 0)
-                        {
-                            hourAvgAkm = minAvgAkm / loopCountAvgMin;
-                            hourAvgOksijen = minAvgOksijen / loopCountAvgMin;
-                            hourAvgDebi = minAvgDebi / loopCountAvgMin;
-                            hourAvgKOi = minAvgKOi / loopCountAvgMin;
-                            hourAvgPh = minAvgPh / loopCountAvgMin;
-                            hourAvgSicaklik = minAvgSicaklik / loopCountAvgMin;
-                            hourAvgIletkenlilk = minAvgIletkenlilk / loopCountAvgMin;
-                            hourAvgAkisHizi = minAvgAkisHizi / loopCountAvgMin;
-                            hourAvgDesarjDebi = minAvgDesarjDebi / loopCountAvgMin;
-
-                            loopCountAvgHour++;
-
-                            lbl_hourAvgAkm.Text = Math.Round(hourAvgAkm / loopCountAvgHour, 2).ToString() + " mg/l";
-                            lbl_hourAvgOksijen.Text = Math.Round(hourAvgOksijen / loopCountAvgHour, 2).ToString() + " mg/l";
-                            lbl_hourAvgDebi.Text = Math.Round(hourAvgDebi / loopCountAvgHour, 2).ToString() + " m³/d";
-                            lbl_hourAvgKOi.Text = Math.Round(hourAvgKOi / loopCountAvgHour, 2).ToString() + " mg/l";
-                            lbl_hourAvgPh.Text = Math.Round(hourAvgPh / loopCountAvgHour, 2).ToString();
-                            lbl_hourAvgSicaklik.Text = Math.Round(hourAvgSicaklik / loopCountAvgHour, 2).ToString() + "°C";
-                            lbl_hourAvgIletkenlik.Text = Math.Round(hourAvgIletkenlilk / loopCountAvgHour, 2).ToString() + " mS/cm";
-                            lbl_hourAvgAkisHizi.Text = Math.Round(hourAvgAkisHizi / loopCountAvgHour, 2).ToString() + " m/s";
-                            lbl_hourAvgDesarjDebi.Text = Math.Round(hourAvgDesarjDebi / loopCountAvgHour, 2).ToString() + " m³/d";
-                        }
-                        else
-                        {
-                            hourAvgAkm += minAvgAkm / loopCountAvgMin;
-                            hourAvgOksijen += minAvgOksijen / loopCountAvgMin;
-                            hourAvgDebi += minAvgDebi / loopCountAvgMin;
-                            hourAvgKOi += minAvgKOi / loopCountAvgMin;
-                            hourAvgPh += minAvgPh / loopCountAvgMin;
-                            hourAvgSicaklik += minAvgSicaklik / loopCountAvgMin;
-                            hourAvgIletkenlilk += minAvgIletkenlilk / loopCountAvgMin;
-                            hourAvgAkisHizi += minAvgAkisHizi / loopCountAvgMin;
-                            hourAvgDesarjDebi += minAvgDesarjDebi / loopCountAvgMin;
-
-                            loopCountAvgHour++;
-
-                            lbl_hourAvgAkm.Text = Math.Round(hourAvgAkm / loopCountAvgHour, 2).ToString() + " mg/l";
-                            lbl_hourAvgOksijen.Text = Math.Round(hourAvgOksijen / loopCountAvgHour, 2).ToString() + " mg/l";
-                            lbl_hourAvgDebi.Text = Math.Round(hourAvgDebi / loopCountAvgHour, 2).ToString() + " m³/d";
-                            lbl_hourAvgKOi.Text = Math.Round(hourAvgKOi / loopCountAvgHour, 2).ToString() + " mg/l";
-                            lbl_hourAvgPh.Text = Math.Round(hourAvgPh / loopCountAvgHour, 2).ToString();
-                            lbl_hourAvgSicaklik.Text = Math.Round(hourAvgSicaklik / loopCountAvgHour, 2).ToString() + "°C";
-                            lbl_hourAvgIletkenlik.Text = Math.Round(hourAvgIletkenlilk / loopCountAvgHour, 2).ToString() + " mS/cm";
-                            lbl_hourAvgAkisHizi.Text = Math.Round(hourAvgAkisHizi / loopCountAvgHour, 2).ToString() + " m/s";
-                            lbl_hourAvgDesarjDebi.Text = Math.Round(hourAvgDesarjDebi / loopCountAvgHour, 2).ToString() + " m³/d";
-                        }
-                    }
-                    else if (loopCountAvgHour == 60)
-                    {
-
-
-                        VeriGonder(plc.GetPlcTime(), lbl_simId.Text, softwareVersion, 1, plc.AkisHiziValue, 1, plc.AkmValue, plc.OksijenValue,
-                            plc.DebiValue, plc.DebiValue, plc.KoiValue, plc.PhValue, plc.SicaklikValue, plc.IletkenlikValue);
-
-                        hourAvgAkm = 0;
-                        hourAvgOksijen = 0;
-                        hourAvgDebi = 0;
-                        hourAvgKOi = 0;
-                        hourAvgPh = 0;
-                        hourAvgSicaklik = 0;
-                        hourAvgIletkenlilk = 0;
-                        hourAvgAkisHizi = 0;
-                        hourAvgDesarjDebi = 0;
-
-                        loopCountAvgHour = 0;
-                    }
-
-
-                    MathematicalOps mathematicalOps = new MathematicalOps();
-                    int status = mathematicalOps.mostFrequent(stats, stats.Length); //O dakika içerisinde en çok tekrara eden durumu bulmak.
-
-                    VeriGonder(plc.GetPlcTime(), lbl_simId.Text, softwareVersion, 1, plc.AkisHiziValue, status, plc.AkmValue, plc.OksijenValue,
-                        plc.DebiValue, plc.DebiValue, plc.KoiValue, plc.PhValue, plc.SicaklikValue, plc.IletkenlikValue);
-
-                    minAvgAkm = 0;
-                    minAvgOksijen = 0;
-                    minAvgDebi = 0;
-                    minAvgKOi = 0;
-                    minAvgPh = 0;
-                    minAvgSicaklik = 0;
-                    minAvgIletkenlilk = 0;
-                    minAvgAkisHizi = 0;
-                    minAvgDesarjDebi = 0;
-
-                    loopCountAvgMin = 0;
-                }
-                #endregion
+                //Son Gönderilen 1 saatlik verinin ortalamasının ekrana gösterimi
+                sqlSave.OrtalamaSon60Dakika(lbl_hourAvgAkm, lbl_hourAvgOksijen, lbl_hourAvgSicaklik, lbl_hourAvgPh, lbl_hourAvgIletkenlik, lbl_hourAvgKOi, lbl_hourAvgDebi, lbl_hourAvgDesarjDebi, lbl_hourAvgAkisHizi);
 
                 SonYikamayaKalan();
                 SonHaftalikYikamayaKalan();
+            };
+            bgw_FormYukle.RunWorkerAsync();
+        }
 
+
+
+        private void SonYikamayaKalan()
+        {
+            if (DateTime.Now.Hour >= 18)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(23, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+            else if (DateTime.Now.Hour >= 12 && DateTime.Now.Hour <= 18)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(17, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+            else if (DateTime.Now.Hour >= 6 && DateTime.Now.Hour <= 12)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(11, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+            else if (DateTime.Now.Hour >= 0 && DateTime.Now.Hour <= 6)
+            {
+                lbl_birSonrakiGunlukYikama.Text = (new TimeSpan(5, 54, 0) - DateTime.Now.TimeOfDay).ToString("hh\\:mm\\:ss");
+            }
+        }
+
+        private void SonHaftalikYikamayaKalan()
+        {
+            DateTime tDT = DateTime.Now;
+
+            int kalangun;
+
+            if ((int)tDT.DayOfWeek != 1)
+            {
+                int ayKacGun = DateTime.DaysInMonth(tDT.Year, tDT.Month);
+
+                kalangun = 7 - (int)tDT.DayOfWeek;
+                int normalGun = tDT.Day + kalangun;
+
+                if (normalGun > ayKacGun)
+                {
+                    normalGun = normalGun + 1 - ayKacGun;
+                }
+                #endregion
             };
 
-            if (plc.Connected())
-            {
-                bgw_FormYukle.RunWorkerAsync();
+                //TimeSpan ts = yikamaZamani - DateTime.Now;
+                string ayAdi = yikamaZamani.ToString("MMMM", new CultureInfo("tr-TR"));
+                lbl_birSonrakiHaftalikYikama.Text = yikamaZamani.Day + " " + ayAdi + " Saat: " + yikamaZamani.Hour + ":" + yikamaZamani.Minute;
             }
-            else
+            else if ((int)tDT.DayOfWeek == 1)
             {
-                plc.Reconnect();
-                //logekle
+                //DateTime yikamaZamani = new DateTime(tDT.Year, tDT.Month, normalGun, 6, 40, 0);
+                DateTime yikamaZamani = new DateTime(tDT.Year, tDT.Month, tDT.Day, 6, 40, 0);
+
+                //TimeSpan ts = yikamaZamani - DateTime.Now;
+                string ayAdi = yikamaZamani.ToString("MMMM", new CultureInfo("tr-TR"));
+                lbl_birSonrakiHaftalikYikama.Text = yikamaZamani.Day + " " + ayAdi + " Saat: " + yikamaZamani.Hour + ":" + yikamaZamani.Minute;
             }
         }
 

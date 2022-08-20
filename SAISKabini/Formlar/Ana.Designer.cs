@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ana));
             this.mainTitle = new System.Windows.Forms.Label();
             this.tableLayoutPanel_TitleBar = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_minimize = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.leftPanel = new System.Windows.Forms.Panel();
             this.panel_menuPicker = new System.Windows.Forms.Panel();
             this.btn_home = new System.Windows.Forms.Button();
@@ -46,7 +47,7 @@
             this.btn_raporlama = new System.Windows.Forms.Button();
             this.panel_content = new System.Windows.Forms.Panel();
             this.tableLayoutPanel_TitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.leftPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,29 +56,30 @@
             this.mainTitle.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.mainTitle.AutoSize = true;
             this.mainTitle.BackColor = System.Drawing.Color.Transparent;
-            this.mainTitle.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mainTitle.Location = new System.Drawing.Point(47, 23);
+            this.mainTitle.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mainTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(131)))), ((int)(((byte)(198)))));
+            this.mainTitle.Location = new System.Drawing.Point(116, 14);
             this.mainTitle.Name = "mainTitle";
-            this.mainTitle.Size = new System.Drawing.Size(221, 15);
+            this.mainTitle.Size = new System.Drawing.Size(278, 33);
             this.mainTitle.TabIndex = 5;
-            this.mainTitle.Text = "Şile Kumbaba - Bakanlık Kabini Yazılımı";
+            this.mainTitle.Text = "Bakanlık Kabini Yazılımı";
             // 
             // tableLayoutPanel_TitleBar
             // 
             this.tableLayoutPanel_TitleBar.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel_TitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tableLayoutPanel_TitleBar.ColumnCount = 7;
-            this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.357664F));
-            this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.34307F));
+            this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.623298F));
+            this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.11498F));
             this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.02968F));
             this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.28864F));
             this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel_TitleBar.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel_TitleBar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.tableLayoutPanel_TitleBar.Controls.Add(this.mainTitle, 1, 0);
             this.tableLayoutPanel_TitleBar.Controls.Add(this.btn_close, 6, 0);
             this.tableLayoutPanel_TitleBar.Controls.Add(this.btn_minimize, 5, 0);
+            this.tableLayoutPanel_TitleBar.Controls.Add(this.pictureBox2, 0, 0);
             this.tableLayoutPanel_TitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel_TitleBar.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel_TitleBar.Name = "tableLayoutPanel_TitleBar";
@@ -86,17 +88,6 @@
             this.tableLayoutPanel_TitleBar.Size = new System.Drawing.Size(1500, 62);
             this.tableLayoutPanel_TitleBar.TabIndex = 6;
             this.tableLayoutPanel_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TableLayoutPanel_TitleBar_MouseDown);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = global::SAISKabini.Properties.Resources.proximity_sensor_24px_blue;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // btn_close
             // 
@@ -107,7 +98,7 @@
             this.btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(40)))), ((int)(((byte)(56)))));
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.Image = global::SAISKabini.Properties.Resources.close_white;
-            this.btn_close.Location = new System.Drawing.Point(1441, 3);
+            this.btn_close.Location = new System.Drawing.Point(1433, 3);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(30, 30);
             this.btn_close.TabIndex = 6;
@@ -123,12 +114,23 @@
             this.btn_minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(40)))), ((int)(((byte)(56)))));
             this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_minimize.Image = global::SAISKabini.Properties.Resources.minimize_white;
-            this.btn_minimize.Location = new System.Drawing.Point(1377, 3);
+            this.btn_minimize.Location = new System.Drawing.Point(1361, 3);
             this.btn_minimize.Name = "btn_minimize";
             this.btn_minimize.Size = new System.Drawing.Size(30, 30);
             this.btn_minimize.TabIndex = 6;
             this.btn_minimize.UseVisualStyleBackColor = true;
             this.btn_minimize.Click += new System.EventHandler(this.Btn_minimize_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::SAISKabini.Properties.Resources.iski_logo1;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(77, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
             // leftPanel
             // 
@@ -365,7 +367,7 @@
             this.panel_content.Size = new System.Drawing.Size(1410, 738);
             this.panel_content.TabIndex = 10;
             // 
-            // Anasayfa
+            // Ana
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -375,19 +377,20 @@
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.tableLayoutPanel_TitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Anasayfa";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Ana";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sais Kabini";
+            this.Load += new System.EventHandler(this.Ana_Load);
             this.tableLayoutPanel_TitleBar.ResumeLayout(false);
             this.tableLayoutPanel_TitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.leftPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label mainTitle;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_TitleBar;
         private System.Windows.Forms.Button btn_close;
@@ -404,6 +407,7 @@
         private System.Windows.Forms.Button btn_mailAyarlari;
         private System.Windows.Forms.Button btn_raporlama;
         private System.Windows.Forms.Panel panel_content;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

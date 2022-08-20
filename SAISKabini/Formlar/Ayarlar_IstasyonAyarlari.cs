@@ -50,6 +50,7 @@ namespace SAISKabini
             }
             catch (Exception ex)
             {
+                sqlConnection.Close();
                 MessageBox.Show("Hata: Veritabanına bilgiler kaydedilirken hata oluştu. Detay: " + ex.Message);
             }
         }
@@ -89,6 +90,7 @@ namespace SAISKabini
                 }
                 catch (Exception ex)
                 {
+                    sqlConnection.Close();
                     MessageBox.Show("Hata: Veritabanına bilgiler kaydedilirken hata oluştu. Detay: " + ex.Message);
                 }
             };

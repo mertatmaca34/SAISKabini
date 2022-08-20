@@ -31,14 +31,38 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -51,71 +75,55 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.btn_Kaydet = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.textBox54 = new System.Windows.Forms.TextBox();
+            this.textBox55 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
@@ -124,15 +132,7 @@
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.btn_Kaydet = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -237,6 +237,411 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1300, 214);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // comboBox24
+            // 
+            this.comboBox24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox24.FormattingEnabled = true;
+            this.comboBox24.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox24.Location = new System.Drawing.Point(180, 168);
+            this.comboBox24.Name = "comboBox24";
+            this.comboBox24.Size = new System.Drawing.Size(151, 23);
+            this.comboBox24.TabIndex = 37;
+            this.comboBox24.Text = "Seçiniz";
+            // 
+            // comboBox23
+            // 
+            this.comboBox23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox23.FormattingEnabled = true;
+            this.comboBox23.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox23.Location = new System.Drawing.Point(808, 139);
+            this.comboBox23.Name = "comboBox23";
+            this.comboBox23.Size = new System.Drawing.Size(151, 23);
+            this.comboBox23.TabIndex = 36;
+            this.comboBox23.Text = "Seçiniz";
+            // 
+            // comboBox22
+            // 
+            this.comboBox22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox22.FormattingEnabled = true;
+            this.comboBox22.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox22.Location = new System.Drawing.Point(180, 139);
+            this.comboBox22.Name = "comboBox22";
+            this.comboBox22.Size = new System.Drawing.Size(151, 23);
+            this.comboBox22.TabIndex = 35;
+            this.comboBox22.Text = "Seçiniz";
+            // 
+            // comboBox21
+            // 
+            this.comboBox21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox21.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox21.Location = new System.Drawing.Point(808, 110);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(151, 23);
+            this.comboBox21.TabIndex = 34;
+            this.comboBox21.Text = "Seçiniz";
+            // 
+            // comboBox20
+            // 
+            this.comboBox20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox20.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox20.Location = new System.Drawing.Point(180, 110);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(151, 23);
+            this.comboBox20.TabIndex = 33;
+            this.comboBox20.Text = "Seçiniz";
+            // 
+            // comboBox19
+            // 
+            this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox19.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox19.Location = new System.Drawing.Point(808, 81);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(151, 23);
+            this.comboBox19.TabIndex = 32;
+            this.comboBox19.Text = "Seçiniz";
+            // 
+            // comboBox18
+            // 
+            this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox18.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox18.Location = new System.Drawing.Point(180, 81);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(151, 23);
+            this.comboBox18.TabIndex = 31;
+            this.comboBox18.Text = "Seçiniz";
+            // 
+            // comboBox17
+            // 
+            this.comboBox17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox17.Location = new System.Drawing.Point(808, 52);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(151, 23);
+            this.comboBox17.TabIndex = 30;
+            this.comboBox17.Text = "Seçiniz";
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox16.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox16.Location = new System.Drawing.Point(180, 52);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(151, 23);
+            this.comboBox16.TabIndex = 29;
+            this.comboBox16.Text = "Seçiniz";
+            // 
+            // textBox29
+            // 
+            this.textBox29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox29.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox29.Location = new System.Drawing.Point(494, 168);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(151, 23);
+            this.textBox29.TabIndex = 28;
+            // 
+            // textBox28
+            // 
+            this.textBox28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox28.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox28.Location = new System.Drawing.Point(337, 168);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(151, 23);
+            this.textBox28.TabIndex = 27;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox26.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox26.Location = new System.Drawing.Point(1122, 139);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(155, 23);
+            this.textBox26.TabIndex = 25;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox25.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox25.Location = new System.Drawing.Point(965, 139);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(151, 23);
+            this.textBox25.TabIndex = 24;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox23.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox23.Location = new System.Drawing.Point(494, 139);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(151, 23);
+            this.textBox23.TabIndex = 22;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox22.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox22.Location = new System.Drawing.Point(337, 139);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(151, 23);
+            this.textBox22.TabIndex = 21;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox20.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox20.Location = new System.Drawing.Point(1122, 110);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(155, 23);
+            this.textBox20.TabIndex = 19;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox19.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox19.Location = new System.Drawing.Point(965, 110);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(151, 23);
+            this.textBox19.TabIndex = 18;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox17.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox17.Location = new System.Drawing.Point(494, 110);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(151, 23);
+            this.textBox17.TabIndex = 16;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox16.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox16.Location = new System.Drawing.Point(337, 110);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(151, 23);
+            this.textBox16.TabIndex = 15;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox14.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox14.Location = new System.Drawing.Point(1122, 81);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(155, 23);
+            this.textBox14.TabIndex = 13;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox13.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox13.Location = new System.Drawing.Point(965, 81);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(151, 23);
+            this.textBox13.TabIndex = 12;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox11.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox11.Location = new System.Drawing.Point(494, 81);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(151, 23);
+            this.textBox11.TabIndex = 10;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox10.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox10.Location = new System.Drawing.Point(337, 81);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(151, 23);
+            this.textBox10.TabIndex = 9;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox8.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox8.Location = new System.Drawing.Point(1122, 52);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(155, 23);
+            this.textBox8.TabIndex = 7;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox7.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox7.Location = new System.Drawing.Point(965, 52);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(151, 23);
+            this.textBox7.TabIndex = 6;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox5.Location = new System.Drawing.Point(494, 52);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(151, 23);
+            this.textBox5.TabIndex = 4;
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -300,33 +705,6 @@
             this.label5.Size = new System.Drawing.Size(41, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Offset";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.groupBox2, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 355);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(20);
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1386, 333);
-            this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(23, 23);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(20);
-            this.groupBox2.Size = new System.Drawing.Size(1340, 287);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "PLC Ayarları Tags";
             // 
             // label10
             // 
@@ -460,628 +838,32 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Deşarj Debi";
             // 
-            // btn_Kaydet
-            // 
-            this.btn_Kaydet.BackColor = System.Drawing.Color.White;
-            this.btn_Kaydet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(231)))), ((int)(((byte)(232)))));
-            this.btn_Kaydet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            this.btn_Kaydet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(231)))), ((int)(((byte)(232)))));
-            this.btn_Kaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Kaydet.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btn_Kaydet.Location = new System.Drawing.Point(1183, 694);
-            this.btn_Kaydet.Name = "btn_Kaydet";
-            this.btn_Kaydet.Size = new System.Drawing.Size(215, 32);
-            this.btn_Kaydet.TabIndex = 5;
-            this.btn_Kaydet.Text = "Kaydet";
-            this.btn_Kaydet.UseVisualStyleBackColor = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox5.Location = new System.Drawing.Point(494, 52);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(151, 23);
-            this.textBox5.TabIndex = 4;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox7.Location = new System.Drawing.Point(965, 52);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(151, 23);
-            this.textBox7.TabIndex = 6;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox8.Location = new System.Drawing.Point(1122, 52);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(155, 23);
-            this.textBox8.TabIndex = 7;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox10.Location = new System.Drawing.Point(337, 81);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(151, 23);
-            this.textBox10.TabIndex = 9;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox11.Location = new System.Drawing.Point(494, 81);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(151, 23);
-            this.textBox11.TabIndex = 10;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox13.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox13.Location = new System.Drawing.Point(965, 81);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(151, 23);
-            this.textBox13.TabIndex = 12;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox14.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox14.Location = new System.Drawing.Point(1122, 81);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(155, 23);
-            this.textBox14.TabIndex = 13;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox16.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox16.Location = new System.Drawing.Point(337, 110);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(151, 23);
-            this.textBox16.TabIndex = 15;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox17.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox17.Location = new System.Drawing.Point(494, 110);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(151, 23);
-            this.textBox17.TabIndex = 16;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox19.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox19.Location = new System.Drawing.Point(965, 110);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(151, 23);
-            this.textBox19.TabIndex = 18;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox20.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox20.Location = new System.Drawing.Point(1122, 110);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(155, 23);
-            this.textBox20.TabIndex = 19;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox22.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox22.Location = new System.Drawing.Point(337, 139);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(151, 23);
-            this.textBox22.TabIndex = 21;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox23.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox23.Location = new System.Drawing.Point(494, 139);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(151, 23);
-            this.textBox23.TabIndex = 22;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox25.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox25.Location = new System.Drawing.Point(965, 139);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(151, 23);
-            this.textBox25.TabIndex = 24;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox26.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox26.Location = new System.Drawing.Point(1122, 139);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(155, 23);
-            this.textBox26.TabIndex = 25;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox28.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox28.Location = new System.Drawing.Point(337, 168);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(151, 23);
-            this.textBox28.TabIndex = 27;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox29.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox29.Location = new System.Drawing.Point(494, 168);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(151, 23);
-            this.textBox29.TabIndex = 28;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox1.Location = new System.Drawing.Point(162, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(133, 23);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Seçiniz";
-            // 
-            // textBox55
-            // 
-            this.textBox55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox55.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox55.Location = new System.Drawing.Point(1135, 173);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(142, 23);
-            this.textBox55.TabIndex = 3;
-            // 
-            // textBox54
-            // 
-            this.textBox54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox54.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox54.Location = new System.Drawing.Point(1135, 143);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(142, 23);
-            this.textBox54.TabIndex = 3;
-            // 
-            // textBox53
-            // 
-            this.textBox53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox53.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox53.Location = new System.Drawing.Point(1135, 113);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(142, 23);
-            this.textBox53.TabIndex = 3;
-            // 
-            // textBox52
-            // 
-            this.textBox52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox52.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox52.Location = new System.Drawing.Point(1135, 83);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(142, 23);
-            this.textBox52.TabIndex = 3;
-            // 
-            // textBox51
-            // 
-            this.textBox51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox51.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox51.Location = new System.Drawing.Point(1135, 53);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(142, 23);
-            this.textBox51.TabIndex = 3;
-            // 
-            // textBox47
-            // 
-            this.textBox47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox47.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox47.Location = new System.Drawing.Point(718, 113);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(133, 23);
-            this.textBox47.TabIndex = 3;
-            // 
-            // textBox46
-            // 
-            this.textBox46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox46.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox46.Location = new System.Drawing.Point(718, 143);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(133, 23);
-            this.textBox46.TabIndex = 3;
-            // 
-            // textBox45
-            // 
-            this.textBox45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox45.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox45.Location = new System.Drawing.Point(718, 173);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(133, 23);
-            this.textBox45.TabIndex = 3;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox40.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox40.Location = new System.Drawing.Point(718, 83);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(133, 23);
-            this.textBox40.TabIndex = 3;
-            // 
-            // textBox39
-            // 
-            this.textBox39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox39.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox39.Location = new System.Drawing.Point(718, 53);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(133, 23);
-            this.textBox39.TabIndex = 3;
-            // 
-            // label41
-            // 
-            this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label41.Location = new System.Drawing.Point(893, 179);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(60, 15);
-            this.label41.TabIndex = 0;
-            this.label41.Text = "Auto Mod";
-            // 
-            // label40
-            // 
-            this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label40.Location = new System.Drawing.Point(903, 147);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(40, 15);
-            this.label40.TabIndex = 0;
-            this.label40.Text = "Bakım";
-            // 
-            // label39
-            // 
-            this.label39.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label39.Location = new System.Drawing.Point(886, 117);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(74, 15);
-            this.label39.TabIndex = 0;
-            this.label39.Text = "Kalibrasyon";
-            // 
-            // label38
-            // 
-            this.label38.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label38.Location = new System.Drawing.Point(858, 87);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(131, 15);
-            this.label38.TabIndex = 0;
-            this.label38.Text = "Haftalık Yıkama Durum";
-            // 
-            // label37
-            // 
-            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label37.Location = new System.Drawing.Point(860, 57);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(127, 15);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Günlük Yıkama Durum";
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label36.Location = new System.Drawing.Point(1180, 27);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(51, 15);
-            this.label36.TabIndex = 0;
-            this.label36.Text = "Address";
-            // 
-            // label35
-            // 
-            this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label35.Location = new System.Drawing.Point(1035, 27);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(54, 15);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "Data Tipi";
-            // 
-            // label34
-            // 
-            this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label34.Location = new System.Drawing.Point(890, 27);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(66, 15);
-            this.label34.TabIndex = 0;
-            this.label34.Text = "Parametre";
-            // 
-            // label33
-            // 
-            this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label33.Location = new System.Drawing.Point(468, 179);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(76, 15);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Yıkama Tankı";
-            // 
-            // label32
-            // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label32.Location = new System.Drawing.Point(487, 147);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(39, 15);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "Enerji";
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label31.Location = new System.Drawing.Point(468, 117);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(76, 15);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "Yıkama Tankı";
-            // 
-            // label30
-            // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label30.Location = new System.Drawing.Point(460, 87);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(92, 15);
-            this.label30.TabIndex = 0;
-            this.label30.Text = "Temiz Su Termik";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label29.Location = new System.Drawing.Point(759, 27);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(51, 15);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "Address";
-            // 
-            // label28
-            // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label28.Location = new System.Drawing.Point(618, 27);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(54, 15);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Data Tipi";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label27.Location = new System.Drawing.Point(473, 27);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(66, 15);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Parametre";
-            // 
-            // label26
-            // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(459, 57);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(94, 15);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Pompa 2 Termik";
-            // 
-            // textBox37
-            // 
-            this.textBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox37.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox37.Location = new System.Drawing.Point(301, 143);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(133, 23);
-            this.textBox37.TabIndex = 3;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox36.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox36.Location = new System.Drawing.Point(301, 173);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(133, 23);
-            this.textBox36.TabIndex = 3;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox32.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox32.Location = new System.Drawing.Point(301, 113);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(133, 23);
-            this.textBox32.TabIndex = 3;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox31.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox31.Location = new System.Drawing.Point(301, 83);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(133, 23);
-            this.textBox31.TabIndex = 3;
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label25.Location = new System.Drawing.Point(42, 179);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(94, 15);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Pompa 1 Termik";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(62, 147);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(55, 15);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Acil Stop";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(58, 117);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(62, 15);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Su Baskını";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(66, 87);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(46, 15);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Duman";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.textBox4.Location = new System.Drawing.Point(301, 53);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 23);
-            this.textBox4.TabIndex = 3;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(342, 27);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 15);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Address";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(201, 27);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 15);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Data Tipi";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(74, 57);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 15);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Kapı";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(56, 27);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 15);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Parametre";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Bool",
-            "Byte",
-            "Word",
-            "DWord",
-            "Char",
-            "Sint",
-            "INT",
-            "Dint",
-            "USInt",
-            "UDint",
-            "Real",
-            "LReal",
-            "Time",
-            "String",
-            "Array",
-            "Struct"});
-            this.comboBox2.Location = new System.Drawing.Point(162, 83);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(133, 23);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.Text = "Seçiniz";
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.groupBox2, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 355);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(20);
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1386, 333);
+            this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tableLayoutPanel4);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Location = new System.Drawing.Point(23, 23);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(20);
+            this.groupBox2.Size = new System.Drawing.Size(1340, 287);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "PLC Ayarları Tags";
             // 
             // tableLayoutPanel4
             // 
@@ -1163,12 +945,12 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1300, 223);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // comboBox3
+            // comboBox2
             // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
             "Bool",
             "Byte",
             "Word",
@@ -1185,11 +967,438 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox3.Location = new System.Drawing.Point(162, 113);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(133, 23);
-            this.comboBox3.TabIndex = 6;
-            this.comboBox3.Text = "Seçiniz";
+            this.comboBox2.Location = new System.Drawing.Point(163, 83);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(134, 23);
+            this.comboBox2.TabIndex = 5;
+            this.comboBox2.Text = "Seçiniz";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(57, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 15);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Parametre";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(74, 57);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 15);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Kapı";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(203, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 15);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Data Tipi";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(344, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 15);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Address";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox4.Location = new System.Drawing.Point(303, 53);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(134, 23);
+            this.textBox4.TabIndex = 3;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label22.Location = new System.Drawing.Point(67, 87);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(46, 15);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Duman";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label23.Location = new System.Drawing.Point(59, 117);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(62, 15);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Su Baskını";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label24.Location = new System.Drawing.Point(62, 147);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(55, 15);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Acil Stop";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label25.Location = new System.Drawing.Point(43, 179);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(94, 15);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Pompa 1 Termik";
+            // 
+            // textBox31
+            // 
+            this.textBox31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox31.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox31.Location = new System.Drawing.Point(303, 83);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(134, 23);
+            this.textBox31.TabIndex = 3;
+            // 
+            // textBox32
+            // 
+            this.textBox32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox32.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox32.Location = new System.Drawing.Point(303, 113);
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(134, 23);
+            this.textBox32.TabIndex = 3;
+            // 
+            // textBox36
+            // 
+            this.textBox36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox36.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox36.Location = new System.Drawing.Point(303, 173);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(134, 23);
+            this.textBox36.TabIndex = 3;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox37.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox37.Location = new System.Drawing.Point(303, 143);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(134, 23);
+            this.textBox37.TabIndex = 3;
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label26.Location = new System.Drawing.Point(463, 57);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(94, 15);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Pompa 2 Termik";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label27.Location = new System.Drawing.Point(477, 27);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(66, 15);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Parametre";
+            // 
+            // label28
+            // 
+            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label28.Location = new System.Drawing.Point(623, 27);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(54, 15);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Data Tipi";
+            // 
+            // label29
+            // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label29.Location = new System.Drawing.Point(764, 27);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(51, 15);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Address";
+            // 
+            // label30
+            // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label30.Location = new System.Drawing.Point(464, 87);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(92, 15);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "Temiz Su Termik";
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label31.Location = new System.Drawing.Point(472, 117);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(76, 15);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "Yıkama Tankı";
+            // 
+            // label32
+            // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label32.Location = new System.Drawing.Point(490, 147);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(39, 15);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Enerji";
+            // 
+            // label33
+            // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label33.Location = new System.Drawing.Point(472, 179);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(76, 15);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Yıkama Tankı";
+            // 
+            // label34
+            // 
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label34.Location = new System.Drawing.Point(897, 27);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(66, 15);
+            this.label34.TabIndex = 0;
+            this.label34.Text = "Parametre";
+            // 
+            // label35
+            // 
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label35.Location = new System.Drawing.Point(1043, 27);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(54, 15);
+            this.label35.TabIndex = 0;
+            this.label35.Text = "Data Tipi";
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label36.Location = new System.Drawing.Point(1184, 27);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(51, 15);
+            this.label36.TabIndex = 0;
+            this.label36.Text = "Address";
+            // 
+            // label37
+            // 
+            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label37.Location = new System.Drawing.Point(866, 57);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(127, 15);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Günlük Yıkama Durum";
+            // 
+            // label38
+            // 
+            this.label38.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label38.Location = new System.Drawing.Point(864, 87);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(131, 15);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "Haftalık Yıkama Durum";
+            // 
+            // label39
+            // 
+            this.label39.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label39.Location = new System.Drawing.Point(893, 117);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(74, 15);
+            this.label39.TabIndex = 0;
+            this.label39.Text = "Kalibrasyon";
+            // 
+            // label40
+            // 
+            this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label40.Location = new System.Drawing.Point(910, 147);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(40, 15);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "Bakım";
+            // 
+            // label41
+            // 
+            this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label41.Location = new System.Drawing.Point(900, 179);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(60, 15);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "Auto Mod";
+            // 
+            // textBox39
+            // 
+            this.textBox39.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox39.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox39.Location = new System.Drawing.Point(723, 53);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(134, 23);
+            this.textBox39.TabIndex = 3;
+            // 
+            // textBox40
+            // 
+            this.textBox40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox40.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox40.Location = new System.Drawing.Point(723, 83);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.Size = new System.Drawing.Size(134, 23);
+            this.textBox40.TabIndex = 3;
+            // 
+            // textBox45
+            // 
+            this.textBox45.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox45.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox45.Location = new System.Drawing.Point(723, 173);
+            this.textBox45.Name = "textBox45";
+            this.textBox45.Size = new System.Drawing.Size(134, 23);
+            this.textBox45.TabIndex = 3;
+            // 
+            // textBox46
+            // 
+            this.textBox46.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox46.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox46.Location = new System.Drawing.Point(723, 143);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(134, 23);
+            this.textBox46.TabIndex = 3;
+            // 
+            // textBox47
+            // 
+            this.textBox47.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox47.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox47.Location = new System.Drawing.Point(723, 113);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.Size = new System.Drawing.Size(134, 23);
+            this.textBox47.TabIndex = 3;
+            // 
+            // textBox51
+            // 
+            this.textBox51.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox51.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox51.Location = new System.Drawing.Point(1143, 53);
+            this.textBox51.Name = "textBox51";
+            this.textBox51.Size = new System.Drawing.Size(134, 23);
+            this.textBox51.TabIndex = 3;
+            // 
+            // textBox52
+            // 
+            this.textBox52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox52.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox52.Location = new System.Drawing.Point(1143, 83);
+            this.textBox52.Name = "textBox52";
+            this.textBox52.Size = new System.Drawing.Size(134, 23);
+            this.textBox52.TabIndex = 3;
+            // 
+            // textBox53
+            // 
+            this.textBox53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox53.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox53.Location = new System.Drawing.Point(1143, 113);
+            this.textBox53.Name = "textBox53";
+            this.textBox53.Size = new System.Drawing.Size(134, 23);
+            this.textBox53.TabIndex = 3;
+            // 
+            // textBox54
+            // 
+            this.textBox54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox54.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox54.Location = new System.Drawing.Point(1143, 143);
+            this.textBox54.Name = "textBox54";
+            this.textBox54.Size = new System.Drawing.Size(134, 23);
+            this.textBox54.TabIndex = 3;
+            // 
+            // textBox55
+            // 
+            this.textBox55.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox55.Font = new System.Drawing.Font("Calibri", 9.75F);
+            this.textBox55.Location = new System.Drawing.Point(1143, 173);
+            this.textBox55.Name = "textBox55";
+            this.textBox55.Size = new System.Drawing.Size(134, 23);
+            this.textBox55.TabIndex = 3;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Array",
+            "Bool",
+            "Byte",
+            "Char",
+            "Dint",
+            "DWord",
+            "INT",
+            "LReal",
+            "Real",
+            "Sint",
+            "String",
+            "Struct",
+            "Time",
+            "UDint",
+            "USInt",
+            "Word"});
+            this.comboBox1.Location = new System.Drawing.Point(163, 53);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(134, 23);
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.Text = "Seçiniz";
             // 
             // comboBox4
             // 
@@ -1213,9 +1422,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox4.Location = new System.Drawing.Point(162, 143);
+            this.comboBox4.Location = new System.Drawing.Point(163, 143);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(133, 23);
+            this.comboBox4.Size = new System.Drawing.Size(134, 23);
             this.comboBox4.TabIndex = 6;
             this.comboBox4.Text = "Seçiniz";
             // 
@@ -1241,9 +1450,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox5.Location = new System.Drawing.Point(162, 173);
+            this.comboBox5.Location = new System.Drawing.Point(163, 173);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(133, 23);
+            this.comboBox5.Size = new System.Drawing.Size(134, 23);
             this.comboBox5.TabIndex = 6;
             this.comboBox5.Text = "Seçiniz";
             // 
@@ -1269,9 +1478,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox6.Location = new System.Drawing.Point(579, 173);
+            this.comboBox6.Location = new System.Drawing.Point(583, 173);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(133, 23);
+            this.comboBox6.Size = new System.Drawing.Size(134, 23);
             this.comboBox6.TabIndex = 6;
             this.comboBox6.Text = "Seçiniz";
             // 
@@ -1297,11 +1506,39 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox7.Location = new System.Drawing.Point(579, 143);
+            this.comboBox7.Location = new System.Drawing.Point(583, 143);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(133, 23);
+            this.comboBox7.Size = new System.Drawing.Size(134, 23);
             this.comboBox7.TabIndex = 6;
             this.comboBox7.Text = "Seçiniz";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Bool",
+            "Byte",
+            "Word",
+            "DWord",
+            "Char",
+            "Sint",
+            "INT",
+            "Dint",
+            "USInt",
+            "UDint",
+            "Real",
+            "LReal",
+            "Time",
+            "String",
+            "Array",
+            "Struct"});
+            this.comboBox3.Location = new System.Drawing.Point(163, 113);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(134, 23);
+            this.comboBox3.TabIndex = 6;
+            this.comboBox3.Text = "Seçiniz";
             // 
             // comboBox8
             // 
@@ -1325,9 +1562,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox8.Location = new System.Drawing.Point(579, 113);
+            this.comboBox8.Location = new System.Drawing.Point(583, 113);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(133, 23);
+            this.comboBox8.Size = new System.Drawing.Size(134, 23);
             this.comboBox8.TabIndex = 6;
             this.comboBox8.Text = "Seçiniz";
             // 
@@ -1353,9 +1590,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox9.Location = new System.Drawing.Point(579, 83);
+            this.comboBox9.Location = new System.Drawing.Point(583, 83);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(133, 23);
+            this.comboBox9.Size = new System.Drawing.Size(134, 23);
             this.comboBox9.TabIndex = 6;
             this.comboBox9.Text = "Seçiniz";
             // 
@@ -1381,9 +1618,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox10.Location = new System.Drawing.Point(579, 53);
+            this.comboBox10.Location = new System.Drawing.Point(583, 53);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(133, 23);
+            this.comboBox10.Size = new System.Drawing.Size(134, 23);
             this.comboBox10.TabIndex = 6;
             this.comboBox10.Text = "Seçiniz";
             // 
@@ -1409,9 +1646,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox11.Location = new System.Drawing.Point(996, 53);
+            this.comboBox11.Location = new System.Drawing.Point(1003, 53);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(133, 23);
+            this.comboBox11.Size = new System.Drawing.Size(134, 23);
             this.comboBox11.TabIndex = 6;
             this.comboBox11.Text = "Seçiniz";
             // 
@@ -1437,9 +1674,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox12.Location = new System.Drawing.Point(996, 83);
+            this.comboBox12.Location = new System.Drawing.Point(1003, 83);
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(133, 23);
+            this.comboBox12.Size = new System.Drawing.Size(134, 23);
             this.comboBox12.TabIndex = 6;
             this.comboBox12.Text = "Seçiniz";
             // 
@@ -1465,9 +1702,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox13.Location = new System.Drawing.Point(996, 113);
+            this.comboBox13.Location = new System.Drawing.Point(1003, 113);
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(133, 23);
+            this.comboBox13.Size = new System.Drawing.Size(134, 23);
             this.comboBox13.TabIndex = 6;
             this.comboBox13.Text = "Seçiniz";
             // 
@@ -1493,9 +1730,9 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox14.Location = new System.Drawing.Point(996, 143);
+            this.comboBox14.Location = new System.Drawing.Point(1003, 143);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(133, 23);
+            this.comboBox14.Size = new System.Drawing.Size(134, 23);
             this.comboBox14.TabIndex = 6;
             this.comboBox14.Text = "Seçiniz";
             // 
@@ -1521,263 +1758,26 @@
             "String",
             "Array",
             "Struct"});
-            this.comboBox15.Location = new System.Drawing.Point(996, 173);
+            this.comboBox15.Location = new System.Drawing.Point(1003, 173);
             this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(133, 23);
+            this.comboBox15.Size = new System.Drawing.Size(134, 23);
             this.comboBox15.TabIndex = 6;
             this.comboBox15.Text = "Seçiniz";
             // 
-            // comboBox16
+            // btn_Kaydet
             // 
-            this.comboBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox16.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox16.Location = new System.Drawing.Point(180, 52);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(151, 23);
-            this.comboBox16.TabIndex = 29;
-            this.comboBox16.Text = "Seçiniz";
-            // 
-            // comboBox17
-            // 
-            this.comboBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox17.Location = new System.Drawing.Point(808, 52);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(151, 23);
-            this.comboBox17.TabIndex = 30;
-            this.comboBox17.Text = "Seçiniz";
-            // 
-            // comboBox18
-            // 
-            this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox18.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox18.Location = new System.Drawing.Point(180, 81);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(151, 23);
-            this.comboBox18.TabIndex = 31;
-            this.comboBox18.Text = "Seçiniz";
-            // 
-            // comboBox19
-            // 
-            this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox19.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox19.Location = new System.Drawing.Point(808, 81);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(151, 23);
-            this.comboBox19.TabIndex = 32;
-            this.comboBox19.Text = "Seçiniz";
-            // 
-            // comboBox20
-            // 
-            this.comboBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox20.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox20.Location = new System.Drawing.Point(180, 110);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(151, 23);
-            this.comboBox20.TabIndex = 33;
-            this.comboBox20.Text = "Seçiniz";
-            // 
-            // comboBox21
-            // 
-            this.comboBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox21.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox21.Location = new System.Drawing.Point(808, 110);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(151, 23);
-            this.comboBox21.TabIndex = 34;
-            this.comboBox21.Text = "Seçiniz";
-            // 
-            // comboBox22
-            // 
-            this.comboBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox22.Location = new System.Drawing.Point(180, 139);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(151, 23);
-            this.comboBox22.TabIndex = 35;
-            this.comboBox22.Text = "Seçiniz";
-            // 
-            // comboBox23
-            // 
-            this.comboBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox23.Location = new System.Drawing.Point(808, 139);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(151, 23);
-            this.comboBox23.TabIndex = 36;
-            this.comboBox23.Text = "Seçiniz";
-            // 
-            // comboBox24
-            // 
-            this.comboBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Items.AddRange(new object[] {
-            "Array",
-            "Bool",
-            "Byte",
-            "Char",
-            "Dint",
-            "DWord",
-            "INT",
-            "LReal",
-            "Real",
-            "Sint",
-            "String",
-            "Struct",
-            "Time",
-            "UDint",
-            "USInt",
-            "Word"});
-            this.comboBox24.Location = new System.Drawing.Point(180, 168);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(151, 23);
-            this.comboBox24.TabIndex = 37;
-            this.comboBox24.Text = "Seçiniz";
+            this.btn_Kaydet.BackColor = System.Drawing.Color.White;
+            this.btn_Kaydet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(231)))), ((int)(((byte)(232)))));
+            this.btn_Kaydet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            this.btn_Kaydet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(231)))), ((int)(((byte)(232)))));
+            this.btn_Kaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Kaydet.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btn_Kaydet.Location = new System.Drawing.Point(1183, 694);
+            this.btn_Kaydet.Name = "btn_Kaydet";
+            this.btn_Kaydet.Size = new System.Drawing.Size(215, 32);
+            this.btn_Kaydet.TabIndex = 5;
+            this.btn_Kaydet.Text = "Kaydet";
+            this.btn_Kaydet.UseVisualStyleBackColor = false;
             // 
             // Ayarlar_PLCAyarlari
             // 

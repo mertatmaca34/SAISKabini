@@ -38,16 +38,14 @@ namespace SAISKabini
         {
             InitializeComponent();
 
-            #region Default Form Stilleri
-
-            btn_kullanicilar.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_kullanicilar.Width, btn_kullanicilar.Height, 20, 20));
-            btn_mailDurumlari.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_mailDurumlari.Width, btn_mailDurumlari.Height, 20, 20));
-            btn_mailServerAyarlari.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_mailServerAyarlari.Width, btn_mailServerAyarlari.Height, 20, 20));
-
-            #endregion
+            panel_content.Controls.Clear();
+            mailAyarlari_Kullanicilar.TopLevel = false;
+            panel_content.Controls.Add(mailAyarlari_Kullanicilar);
+            mailAyarlari_Kullanicilar.Show();
         }
 
-        private void btn_kullanicilar_Click(object sender, EventArgs e)
+
+        private void kullanıcılarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel_content.Controls.Clear();
             mailAyarlari_Kullanicilar.TopLevel = false;
@@ -55,7 +53,7 @@ namespace SAISKabini
             mailAyarlari_Kullanicilar.Show();
         }
 
-        private void btn_mailDurumlari_Click(object sender, EventArgs e)
+        private void mailDurumlarıToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel_content.Controls.Clear();
             mailAyarlari_MailDurumlari.TopLevel = false;
@@ -63,7 +61,7 @@ namespace SAISKabini
             mailAyarlari_MailDurumlari.Show();
         }
 
-        private void btn_mailServerAyarlari_Click(object sender, EventArgs e)
+        private void mailServerAyarlarıToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel_content.Controls.Clear();
             mailServerAyarlari.TopLevel = false;

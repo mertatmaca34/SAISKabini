@@ -55,10 +55,10 @@ namespace SAISKabini
         public Objects objects { get; set; }
     }
 
+    public class ResultStatus<Objects>
     {
         public bool result { get; set; }
         public string message { get; set; }
+        public Objects objects { get; set; }
     }
-
-
 }

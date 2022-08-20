@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SAISKabini
 {
-    public class GetLastData
+    internal class UserInfo
     {
-        public Guid? Stationid { get; set; }
-        public int? Period { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
     }
 }

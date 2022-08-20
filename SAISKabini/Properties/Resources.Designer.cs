@@ -193,9 +193,9 @@ namespace SAISKabini.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap Iski_logo {
+        internal static System.Drawing.Bitmap iski_logo1 {
             get {
-                object obj = ResourceManager.GetObject("Iski-logo", resourceCulture);
+                object obj = ResourceManager.GetObject("iski_logo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -526,6 +526,16 @@ namespace SAISKabini.Properties {
         internal static System.Drawing.Bitmap reporting_white {
             get {
                 object obj = ResourceManager.GetObject("reporting_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rest_API_100px {
+            get {
+                object obj = ResourceManager.GetObject("Rest API_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
